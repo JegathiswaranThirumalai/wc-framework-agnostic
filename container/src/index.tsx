@@ -9,6 +9,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
+    <h1 style={{margin: 50}}>React App + SDK</h1>
     <DataTableComponent />
   </React.StrictMode>
 );
