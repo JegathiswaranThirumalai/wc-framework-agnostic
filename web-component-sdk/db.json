@@ -1,0 +1,65 @@
+{
+  "odata.context": "http://example.com/odata/$metadata#Products",
+  "value": [
+    {
+      "ID": 1,
+      "Name": "Product A",
+      "Description": "Description for Product A",
+      "Price": 10.99
+    },
+    {
+      "ID": 2,
+      "Name": "Product B",
+      "Description": "Description for Product B",
+      "Price": 12.99
+    },
+    {
+      "ID": 3,
+      "Name": "Product C",
+      "Description": "Description for Product C",
+      "Price": 9.99
+    },
+    {
+      "ID": 4,
+      "Name": "Product D",
+      "Description": "Description for Product D",
+      "Price": 15.99
+    },
+    {
+      "ID": 5,
+      "Name": "Product E",
+      "Description": "Description for Product E",
+      "Price": 8.99
+    },
+    {
+      "ID": 6,
+      "Name": "Product F",
+      "Description": "Description for Product F",
+      "Price": 7.99
+    },
+    {
+      "ID": 7,
+      "Name": "Product G",
+      "Description": "Description for Product G",
+      "Price": 6.99
+    },
+    {
+      "ID": 8,
+      "Name": "Product H",
+      "Description": "Description for Product H",
+      "Price": 11.99
+    },
+    {
+      "ID": 9,
+      "Name": "Product I",
+      "Description": "Description for Product I",
+      "Price": 13.99
+    },
+    {
+      "ID": 10,
+      "Name": "Product J",
+      "Description": "Description for Product J",
+      "Price": 14.99
+    }
+  ]
+}
