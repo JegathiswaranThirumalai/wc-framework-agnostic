@@ -7,10 +7,10 @@
   "module": "dist/index.js",
   "type": "module",
   "exports": {
-    "./dist/data-table": {
-      "import": "./dist/data-table.js",
-      "require": "./dist/data-table.js"
-    }
+      "./dist/data-table": {
+        "import": "./dist/data-table.js",
+        "require": "./dist/data-table.js"
+      }
   },
   "scripts": {
     "build": "tsc",
@@ -30,8 +30,6 @@
     "analyze": "cem analyze --litelement --globs \"src/**/*.ts\"",
     "analyze:watch": "cem analyze --litelement --globs \"src/**/*.ts\" --watch",
     "serve": "wds --watch",
-    "start": "concurrently \"npm run json-server\" \"npm run serve\"",
-    "json-server": "json-server --watch db1.json",
     "serve:prod": "MODE=prod npm run serve",
     "test": "npm run test:dev && npm run test:prod",
     "test:dev": "wtr",
@@ -66,7 +64,6 @@
     "@web/test-runner": "^0.15.0",
     "@web/test-runner-playwright": "^0.9.0",
     "@webcomponents/webcomponentsjs": "^2.8.0",
-    "concurrently": "^8.2.2",
     "eslint": "^8.15.0",
     "json-server": "^1.0.0-beta.0",
     "lit-analyzer": "^1.2.1",
