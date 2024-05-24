@@ -1,31 +1,31 @@
 {
-  "hash": "be93132a",
-  "configHash": "c2c36282",
+  "hash": "83faae1e",
+  "configHash": "1de58af1",
   "lockfileHash": "2d5b4c3a",
-  "browserHash": "9681dc0c",
+  "browserHash": "408b0d9c",
   "optimized": {
     "@angular/core": {
       "src": "../../../../../node_modules/@angular/core/fesm2022/core.mjs",
       "file": "@angular_core.js",
-      "fileHash": "ab340619",
+      "fileHash": "1723bfca",
       "needsInterop": false
     },
     "@angular/platform-browser": {
       "src": "../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
       "file": "@angular_platform-browser.js",
-      "fileHash": "1b18b5e0",
+      "fileHash": "5015952a",
       "needsInterop": false
     },
     "@angular/router": {
       "src": "../../../../../node_modules/@angular/router/fesm2022/router.mjs",
       "file": "@angular_router.js",
-      "fileHash": "a381ddcf",
+      "fileHash": "98a3654a",
       "needsInterop": false
     },
-    "cases-sdk/dist/data-table": {
-      "src": "../../../../../../sdk/dist/data-table.js",
-      "file": "cases-sdk_dist_data-table.js",
-      "fileHash": "830b66e8",
+    "wz-sdk/dist/data-table": {
+      "src": "../../../../../../web-component-sdk/dist/data-table.js",
+      "file": "wz-sdk_dist_data-table.js",
+      "fileHash": "c54e0e0b",
       "needsInterop": false
     }
   },
