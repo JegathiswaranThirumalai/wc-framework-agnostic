@@ -11,7 +11,7 @@ For simplicity, we keep all projects in the same folder, but each folder is a di
   | cases             | **Plain JS** application using the SDK      |
 
 ## Prerequisties
-  - Node.js
+  - Node.js Latest
   - npm
 
 ## Web Component SDK
