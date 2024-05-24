@@ -6,9 +6,9 @@ For simplicity, we keep all projects in the same folder, but each folder is a di
   |      Folder       | Description                       |
   |-------------------|-----------------------------------|
   | web-component-sdk | For generating the UI library     |      
-  | container         | React application using the SDk   |
-  | documents         | Angular application using the SDK |
-  | vannila-app       | JS application using the SDK      |
+  | container         | **React** application using the SDk   |
+  | documents         | **Angular** application using the SDK |
+  | cases             | **Plain JS** application using the SDK      |
 
 ## Prerequisties
   - Node.js
@@ -21,15 +21,15 @@ For simplicity, we keep all projects in the same folder, but each folder is a di
 
 ## Container - React Application
   - Go the "container" folder and run `npm install` to install the depedencies
-  - Run `npm link cases-sdk` to map the SDK package locally
+  - Run `npm link wz-sdk` to map the SDK package locally
   - To start the project, run `npm start`
 
 ## Documents - Angular Application
   - Go the "documents" folder and run `npm install` to install the depedencies
-  - Run `npm link cases-sdk` to map the SDK package locally
+  - Run `npm link wz-sdk` to map the SDK package locally
   - To start the project, run `ng serve`
 
 ## Vannila App - Plain JS Application
   - Go the "vannila-app" folder and run `npm install` to install the depedencies
-  - Run `npm link cases-sdk` to map the SDK package locally
+  - Run `npm link wz-sdk` to map the SDK package locally
   - To start the project, run `npm run dev`

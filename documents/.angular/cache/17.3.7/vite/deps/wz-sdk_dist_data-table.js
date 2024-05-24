@@ -5,7 +5,7 @@ import {
   __superGet
 } from "./chunk-LJ4VCL4A.js";
 
-// ../sdk/node_modules/@lit/reactive-element/development/css-tag.js
+// ../web-component-sdk/node_modules/@lit/reactive-element/development/css-tag.js
 var NODE_MODE = false;
 var global2 = globalThis;
 var supportsAdoptingStyleSheets = global2.ShadowRoot && (global2.ShadyCSS === void 0 || global2.ShadyCSS.nativeShadow) && "adoptedStyleSheets" in Document.prototype && "replace" in CSSStyleSheet.prototype;
@@ -81,7 +81,7 @@ var cssResultFromStyleSheet = (sheet) => {
 };
 var getCompatibleStyle = supportsAdoptingStyleSheets || NODE_MODE && global2.CSSStyleSheet === void 0 ? (s) => s : (s) => s instanceof CSSStyleSheet ? cssResultFromStyleSheet(s) : s;
 
-// ../sdk/node_modules/@lit/reactive-element/development/reactive-element.js
+// ../web-component-sdk/node_modules/@lit/reactive-element/development/reactive-element.js
 var { is, defineProperty, getOwnPropertyDescriptor, getOwnPropertyNames, getOwnPropertySymbols, getPrototypeOf } = Object;
 var NODE_MODE2 = false;
 var global3 = globalThis;
@@ -907,7 +907,7 @@ if (DEV_MODE && global3.reactiveElementVersions.length > 1) {
   issueWarning("multiple-versions", `Multiple versions of Lit loaded. Loading multiple versions is not recommended.`);
 }
 
-// ../sdk/node_modules/lit-html/development/lit-html.js
+// ../web-component-sdk/node_modules/lit-html/development/lit-html.js
 var DEV_MODE2 = true;
 var ENABLE_EXTRA_SECURITY_HOOKS = true;
 var ENABLE_SHADYDOM_NOPATCH = true;
@@ -1832,7 +1832,7 @@ if (ENABLE_EXTRA_SECURITY_HOOKS) {
   }
 }
 
-// ../sdk/node_modules/lit-element/development/lit-element.js
+// ../web-component-sdk/node_modules/lit-element/development/lit-element.js
 var JSCompiler_renameProperty2 = (prop, _obj) => prop;
 var DEV_MODE3 = true;
 var issueWarning3;
@@ -1943,7 +1943,7 @@ if (DEV_MODE3 && globalThis.litElementVersions.length > 1) {
   issueWarning3("multiple-versions", `Multiple versions of Lit loaded. Loading multiple versions is not recommended.`);
 }
 
-// ../sdk/node_modules/@lit/reactive-element/development/decorators/custom-element.js
+// ../web-component-sdk/node_modules/@lit/reactive-element/development/decorators/custom-element.js
 var customElement = (tagName) => (classOrTarget, context) => {
   if (context !== void 0) {
     context.addInitializer(() => {
@@ -1954,7 +1954,7 @@ var customElement = (tagName) => (classOrTarget, context) => {
   }
 };
 
-// ../sdk/node_modules/@lit/reactive-element/development/decorators/property.js
+// ../web-component-sdk/node_modules/@lit/reactive-element/development/decorators/property.js
 var DEV_MODE4 = true;
 var issueWarning4;
 if (DEV_MODE4) {
@@ -2020,7 +2020,7 @@ function property(options) {
   };
 }
 
-// ../sdk/node_modules/@lit/reactive-element/development/decorators/query.js
+// ../web-component-sdk/node_modules/@lit/reactive-element/development/decorators/query.js
 var DEV_MODE5 = true;
 var issueWarning5;
 if (DEV_MODE5) {
@@ -2034,7 +2034,7 @@ if (DEV_MODE5) {
   };
 }
 
-// ../sdk/node_modules/@microsoft/fast-element/dist/esm/platform.js
+// ../web-component-sdk/node_modules/@microsoft/fast-element/dist/esm/platform.js
 var $global = function() {
   if (typeof globalThis !== "undefined") {
     return globalThis;
@@ -2094,7 +2094,7 @@ function createMetadataLocator() {
   };
 }
 
-// ../sdk/node_modules/@microsoft/fast-element/dist/esm/dom.js
+// ../web-component-sdk/node_modules/@microsoft/fast-element/dist/esm/dom.js
 var updateQueue = $global.FAST.getById(1, () => {
   const tasks = [];
   const pendingErrors = [];
@@ -2287,7 +2287,7 @@ var DOM = Object.freeze({
   }
 });
 
-// ../sdk/node_modules/@microsoft/fast-element/dist/esm/observation/notifier.js
+// ../web-component-sdk/node_modules/@microsoft/fast-element/dist/esm/observation/notifier.js
 var SubscriberSet = class {
   /**
    * Creates an instance of SubscriberSet for the specified source.
@@ -2436,7 +2436,7 @@ var PropertyChangeNotifier = class {
   }
 };
 
-// ../sdk/node_modules/@microsoft/fast-element/dist/esm/observation/observable.js
+// ../web-component-sdk/node_modules/@microsoft/fast-element/dist/esm/observation/observable.js
 var Observable = FAST.getById(2, () => {
   const volatileRegex = /(:|&&|\|\||if)/;
   const notifierLookup = /* @__PURE__ */ new WeakMap();
@@ -2743,7 +2743,7 @@ Observable.defineProperty(ExecutionContext.prototype, "index");
 Observable.defineProperty(ExecutionContext.prototype, "length");
 var defaultExecutionContext = Object.seal(new ExecutionContext());
 
-// ../sdk/node_modules/@microsoft/fast-element/dist/esm/templating/html-directive.js
+// ../web-component-sdk/node_modules/@microsoft/fast-element/dist/esm/templating/html-directive.js
 var HTMLDirective = class {
   constructor() {
     this.targetIndex = 0;
@@ -2789,7 +2789,7 @@ var AttachedBehaviorHTMLDirective = class extends HTMLDirective {
   }
 };
 
-// ../sdk/node_modules/@microsoft/fast-element/dist/esm/templating/binding.js
+// ../web-component-sdk/node_modules/@microsoft/fast-element/dist/esm/templating/binding.js
 function normalBind(source, context) {
   this.source = source;
   this.context = context;
@@ -3007,7 +3007,7 @@ var BindingBehavior = class {
   }
 };
 
-// ../sdk/node_modules/@microsoft/fast-element/dist/esm/templating/compiler.js
+// ../web-component-sdk/node_modules/@microsoft/fast-element/dist/esm/templating/compiler.js
 var sharedContext = null;
 var CompilationContext = class _CompilationContext {
   addFactory(factory) {
@@ -3174,7 +3174,7 @@ function compileTemplate(template, directives) {
   };
 }
 
-// ../sdk/node_modules/@microsoft/fast-element/dist/esm/templating/view.js
+// ../web-component-sdk/node_modules/@microsoft/fast-element/dist/esm/templating/view.js
 var range = document.createRange();
 var HTMLView = class {
   /**
@@ -3318,7 +3318,7 @@ var HTMLView = class {
   }
 };
 
-// ../sdk/node_modules/@microsoft/fast-element/dist/esm/templating/template.js
+// ../web-component-sdk/node_modules/@microsoft/fast-element/dist/esm/templating/template.js
 var ViewTemplate = class {
   /**
    * Creates an instance of ViewTemplate.
@@ -3444,7 +3444,7 @@ function html2(strings, ...values) {
   return new ViewTemplate(html3, directives);
 }
 
-// ../sdk/node_modules/@microsoft/fast-element/dist/esm/styles/element-styles.js
+// ../web-component-sdk/node_modules/@microsoft/fast-element/dist/esm/styles/element-styles.js
 var ElementStyles = class {
   constructor() {
     this.targets = /* @__PURE__ */ new WeakSet();
@@ -3605,7 +3605,7 @@ var StyleElementStyles = class extends ElementStyles {
   }
 };
 
-// ../sdk/node_modules/@microsoft/fast-element/dist/esm/components/attributes.js
+// ../web-component-sdk/node_modules/@microsoft/fast-element/dist/esm/components/attributes.js
 var AttributeConfiguration = Object.freeze({
   /**
    * Locates all attribute configurations associated with a type.
@@ -3764,7 +3764,7 @@ function attr(configOrTarget, prop) {
   return decorator;
 }
 
-// ../sdk/node_modules/@microsoft/fast-element/dist/esm/components/fast-definitions.js
+// ../web-component-sdk/node_modules/@microsoft/fast-element/dist/esm/components/fast-definitions.js
 var defaultShadowOptions = { mode: "open" };
 var defaultElementOptions = {};
 var fastRegistry = FAST.getById(4, () => {
@@ -3845,7 +3845,7 @@ var FASTElementDefinition = class {
 };
 FASTElementDefinition.forType = fastRegistry.getByType;
 
-// ../sdk/node_modules/@microsoft/fast-element/dist/esm/components/controller.js
+// ../web-component-sdk/node_modules/@microsoft/fast-element/dist/esm/components/controller.js
 var shadowRoots = /* @__PURE__ */ new WeakMap();
 var defaultEventOptions = {
   bubbles: true,
@@ -4161,7 +4161,7 @@ var Controller = class _Controller extends PropertyChangeNotifier {
   }
 };
 
-// ../sdk/node_modules/@microsoft/fast-element/dist/esm/components/fast-element.js
+// ../web-component-sdk/node_modules/@microsoft/fast-element/dist/esm/components/fast-element.js
 function createFASTElement(BaseType) {
   return class extends BaseType {
     constructor() {
@@ -4202,7 +4202,7 @@ var FASTElement = Object.assign(createFASTElement(HTMLElement), {
   }
 });
 
-// ../sdk/node_modules/@microsoft/fast-element/dist/esm/styles/css-directive.js
+// ../web-component-sdk/node_modules/@microsoft/fast-element/dist/esm/styles/css-directive.js
 var CSSDirective = class {
   /**
    * Creates a CSS fragment to interpolate into the CSS document.
@@ -4220,7 +4220,7 @@ var CSSDirective = class {
   }
 };
 
-// ../sdk/node_modules/@microsoft/fast-element/dist/esm/styles/css.js
+// ../web-component-sdk/node_modules/@microsoft/fast-element/dist/esm/styles/css.js
 function collectStyles(strings, values) {
   const styles = [];
   let cssString = "";
@@ -4307,7 +4307,7 @@ function cssPartial(strings, ...values) {
   return new CSSPartial(styles, behaviors);
 }
 
-// ../sdk/node_modules/@microsoft/fast-element/dist/esm/observation/array-change-records.js
+// ../web-component-sdk/node_modules/@microsoft/fast-element/dist/esm/observation/array-change-records.js
 function newSplice(index, removed, addedCount) {
   return {
     index,
@@ -4571,7 +4571,7 @@ function projectArraySplices(array, changeRecords) {
   return splices;
 }
 
-// ../sdk/node_modules/@microsoft/fast-element/dist/esm/observation/array-observer.js
+// ../web-component-sdk/node_modules/@microsoft/fast-element/dist/esm/observation/array-observer.js
 var arrayObservationEnabled = false;
 function adjustIndex(changeRecord, array) {
   let index = changeRecord.index;
@@ -4727,7 +4727,7 @@ function enableArrayObservation() {
   };
 }
 
-// ../sdk/node_modules/@microsoft/fast-element/dist/esm/templating/ref.js
+// ../web-component-sdk/node_modules/@microsoft/fast-element/dist/esm/templating/ref.js
 var RefBehavior = class {
   /**
    * Creates an instance of RefBehavior.
@@ -4758,10 +4758,10 @@ function ref(propertyName) {
   return new AttachedBehaviorHTMLDirective("fast-ref", RefBehavior, propertyName);
 }
 
-// ../sdk/node_modules/@microsoft/fast-element/dist/esm/interfaces.js
+// ../web-component-sdk/node_modules/@microsoft/fast-element/dist/esm/interfaces.js
 var isFunction = (object) => typeof object === "function";
 
-// ../sdk/node_modules/@microsoft/fast-element/dist/esm/templating/when.js
+// ../web-component-sdk/node_modules/@microsoft/fast-element/dist/esm/templating/when.js
 var noTemplate = () => null;
 function normalizeBinding(value) {
   return value === void 0 ? noTemplate : isFunction(value) ? value : () => value;
@@ -4773,7 +4773,7 @@ function when(binding, templateOrTemplateBinding, elseTemplateOrTemplateBinding)
   return (source, context) => dataBinding(source, context) ? templateBinding(source, context) : elseBinding(source, context);
 }
 
-// ../sdk/node_modules/@microsoft/fast-element/dist/esm/templating/repeat.js
+// ../web-component-sdk/node_modules/@microsoft/fast-element/dist/esm/templating/repeat.js
 var defaultRepeatOptions = Object.freeze({
   positioning: false,
   recycle: true
@@ -5003,7 +5003,7 @@ function repeat(itemsBinding, templateOrTemplateBinding, options = defaultRepeat
   return new RepeatDirective(itemsBinding, templateBinding, Object.assign(Object.assign({}, defaultRepeatOptions), options));
 }
 
-// ../sdk/node_modules/@microsoft/fast-element/dist/esm/templating/node-observation.js
+// ../web-component-sdk/node_modules/@microsoft/fast-element/dist/esm/templating/node-observation.js
 function elements(selector) {
   if (selector) {
     return function(value, index, array) {
@@ -5066,7 +5066,7 @@ var NodeObservationBehavior = class {
   }
 };
 
-// ../sdk/node_modules/@microsoft/fast-element/dist/esm/templating/slotted.js
+// ../web-component-sdk/node_modules/@microsoft/fast-element/dist/esm/templating/slotted.js
 var SlottedBehavior = class extends NodeObservationBehavior {
   /**
    * Creates an instance of SlottedBehavior.
@@ -5102,7 +5102,7 @@ function slotted(propertyOrOptions) {
   return new AttachedBehaviorHTMLDirective("fast-slotted", SlottedBehavior, propertyOrOptions);
 }
 
-// ../sdk/node_modules/@microsoft/fast-element/dist/esm/templating/children.js
+// ../web-component-sdk/node_modules/@microsoft/fast-element/dist/esm/templating/children.js
 var ChildrenBehavior = class extends NodeObservationBehavior {
   /**
    * Creates an instance of ChildrenBehavior.
@@ -5148,7 +5148,7 @@ function children(propertyOrOptions) {
   return new AttachedBehaviorHTMLDirective("fast-children", ChildrenBehavior, propertyOrOptions);
 }
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/patterns/start-end.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/patterns/start-end.js
 var StartEnd = class {
   handleStartContentChange() {
     this.startContainer.classList.toggle("start", this.start.assignedNodes().length > 0);
@@ -5202,7 +5202,7 @@ var startTemplate = html2`
     </span>
 `;
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/accordion-item/accordion-item.template.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/accordion-item/accordion-item.template.js
 var accordionItemTemplate = (context, definition) => html2`
     <template class="${(x) => x.expanded ? "expanded" : ""}">
         <div
@@ -5247,7 +5247,7 @@ var accordionItemTemplate = (context, definition) => html2`
     </template>
 `;
 
-// ../sdk/node_modules/tslib/tslib.es6.js
+// ../web-component-sdk/node_modules/tslib/tslib.es6.js
 function __decorate(decorators, target2, key, desc2) {
   var c = arguments.length, r = c < 3 ? target2 : desc2 === null ? desc2 = Object.getOwnPropertyDescriptor(target2, key) : desc2, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function")
@@ -5259,7 +5259,7 @@ function __decorate(decorators, target2, key, desc2) {
   return c > 3 && r && Object.defineProperty(target2, key, r), r;
 }
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/di/di.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/di/di.js
 var metadataByTarget = /* @__PURE__ */ new Map();
 if (!("metadata" in Reflect)) {
   Reflect.metadata = function(key, value) {
@@ -6336,7 +6336,7 @@ function isArrayIndex(value) {
   }
 }
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/design-system/component-presentation.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/design-system/component-presentation.js
 function presentationKeyFromTag(tagName) {
   return `${tagName.toLowerCase()}:presentation`;
 }
@@ -6404,7 +6404,7 @@ var DefaultComponentPresentation = class {
   }
 };
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/foundation-element/foundation-element.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/foundation-element/foundation-element.js
 var FoundationElement = class _FoundationElement extends FASTElement {
   constructor() {
     super(...arguments);
@@ -6506,7 +6506,7 @@ var FoundationElementRegistry = class {
   }
 };
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/utilities/apply-mixins.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/utilities/apply-mixins.js
 function applyMixins(derivedCtor, ...baseCtors) {
   const derivedAttributes = AttributeConfiguration.locate(derivedCtor);
   baseCtors.forEach((baseCtor) => {
@@ -6525,7 +6525,7 @@ function applyMixins(derivedCtor, ...baseCtors) {
   });
 }
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/accordion-item/accordion-item.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/accordion-item/accordion-item.js
 var AccordionItem = class extends FoundationElement {
   constructor() {
     super(...arguments);
@@ -6555,7 +6555,7 @@ __decorate([
 ], AccordionItem.prototype, "id", void 0);
 applyMixins(AccordionItem, StartEnd);
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/accordion/accordion.template.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/accordion/accordion.template.js
 var accordionTemplate = (context, definition) => (
   /* TODO: deprecate slot name `item` to only support default slot https://github.com/microsoft/fast/issues/5515 */
   html2`
@@ -6566,13 +6566,13 @@ var accordionTemplate = (context, definition) => (
 `
 );
 
-// ../sdk/node_modules/@microsoft/fast-web-utilities/dist/aria.js
+// ../web-component-sdk/node_modules/@microsoft/fast-web-utilities/dist/aria.js
 var Orientation = {
   horizontal: "horizontal",
   vertical: "vertical"
 };
 
-// ../sdk/node_modules/@microsoft/fast-web-utilities/dist/array.js
+// ../web-component-sdk/node_modules/@microsoft/fast-web-utilities/dist/array.js
 function findLastIndex(array, predicate) {
   let k = array.length;
   while (k--) {
@@ -6583,12 +6583,12 @@ function findLastIndex(array, predicate) {
   return -1;
 }
 
-// ../sdk/node_modules/exenv-es6/dist/can-use-dom.js
+// ../web-component-sdk/node_modules/exenv-es6/dist/can-use-dom.js
 function canUseDOM() {
   return !!(typeof window !== "undefined" && window.document && window.document.createElement);
 }
 
-// ../sdk/node_modules/@microsoft/fast-web-utilities/dist/dom.js
+// ../web-component-sdk/node_modules/@microsoft/fast-web-utilities/dist/dom.js
 function isHTMLElement(...args) {
   return args.every((arg) => arg instanceof HTMLElement);
 }
@@ -6633,7 +6633,7 @@ function canUseFocusVisible() {
   return _canUseFocusVisible;
 }
 
-// ../sdk/node_modules/@microsoft/fast-web-utilities/dist/events.js
+// ../web-component-sdk/node_modules/@microsoft/fast-web-utilities/dist/events.js
 var eventFocus = "focus";
 var eventFocusIn = "focusin";
 var eventFocusOut = "focusout";
@@ -6641,7 +6641,7 @@ var eventKeyDown = "keydown";
 var eventResize = "resize";
 var eventScroll = "scroll";
 
-// ../sdk/node_modules/@microsoft/fast-web-utilities/dist/key-codes.js
+// ../web-component-sdk/node_modules/@microsoft/fast-web-utilities/dist/key-codes.js
 var KeyCodes;
 (function(KeyCodes2) {
   KeyCodes2[KeyCodes2["alt"] = 18] = "alt";
@@ -6736,14 +6736,14 @@ var ArrowKeys = {
   ArrowUp: keyArrowUp
 };
 
-// ../sdk/node_modules/@microsoft/fast-web-utilities/dist/localization.js
+// ../web-component-sdk/node_modules/@microsoft/fast-web-utilities/dist/localization.js
 var Direction;
 (function(Direction2) {
   Direction2["ltr"] = "ltr";
   Direction2["rtl"] = "rtl";
 })(Direction || (Direction = {}));
 
-// ../sdk/node_modules/@microsoft/fast-web-utilities/dist/numbers.js
+// ../web-component-sdk/node_modules/@microsoft/fast-web-utilities/dist/numbers.js
 function wrapInBounds(min, max, value) {
   if (value < min) {
     return max;
@@ -6760,13 +6760,13 @@ function inRange(value, min, max = 0) {
   return min <= value && value < max;
 }
 
-// ../sdk/node_modules/@microsoft/fast-web-utilities/dist/strings.js
+// ../web-component-sdk/node_modules/@microsoft/fast-web-utilities/dist/strings.js
 var uniqueIdCounter = 0;
 function uniqueId(prefix = "") {
   return `${prefix}${uniqueIdCounter++}`;
 }
 
-// ../sdk/node_modules/@microsoft/fast-web-utilities/dist/rtl-scroll-converter.js
+// ../web-component-sdk/node_modules/@microsoft/fast-web-utilities/dist/rtl-scroll-converter.js
 var RtlScrollConverter = class _RtlScrollConverter {
   /**
    *  Gets the scrollLeft value of the provided element
@@ -6932,7 +6932,7 @@ var RtlScrollConverter = class _RtlScrollConverter {
 RtlScrollConverter.getRtlScrollLeftConverter = RtlScrollConverter.initialGetRtlScrollConverter;
 RtlScrollConverter.setRtlScrollLeftConverter = RtlScrollConverter.initialSetRtlScrollConverter;
 
-// ../sdk/node_modules/@microsoft/fast-web-utilities/dist/system-colors.js
+// ../web-component-sdk/node_modules/@microsoft/fast-web-utilities/dist/system-colors.js
 var SystemColors;
 (function(SystemColors2) {
   SystemColors2["Canvas"] = "Canvas";
@@ -6949,7 +6949,7 @@ var SystemColors;
   SystemColors2["GrayText"] = "GrayText";
 })(SystemColors || (SystemColors = {}));
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/accordion/accordion.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/accordion/accordion.js
 var AccordionExpandMode = {
   /**
    * Designates only a single {@link @microsoft/fast-foundation#(AccordionItem:class) } can be open a time.
@@ -7102,7 +7102,7 @@ __decorate([
   observable
 ], Accordion.prototype, "accordionItems", void 0);
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/anchor/anchor.template.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/anchor/anchor.template.js
 var anchorTemplate = (context, definition) => html2`
     <a
         class="control"
@@ -7145,7 +7145,7 @@ var anchorTemplate = (context, definition) => html2`
     </a>
 `;
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/patterns/aria-global.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/patterns/aria-global.js
 var ARIAGlobalStatesAndProperties = class {
 };
 __decorate([
@@ -7206,7 +7206,7 @@ __decorate([
   attr({ attribute: "aria-roledescription" })
 ], ARIAGlobalStatesAndProperties.prototype, "ariaRoledescription", void 0);
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/anchor/anchor.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/anchor/anchor.js
 var Anchor = class extends FoundationElement {
   constructor() {
     super(...arguments);
@@ -7263,7 +7263,7 @@ __decorate([
 applyMixins(DelegatesARIALink, ARIAGlobalStatesAndProperties);
 applyMixins(Anchor, StartEnd, DelegatesARIALink);
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/anchored-region/anchored-region.template.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/anchored-region/anchored-region.template.js
 var anchoredRegionTemplate = (context, definition) => html2`
     <template class="${(x) => x.initialLayoutComplete ? "loaded" : ""}">
         ${when((x) => x.initialLayoutComplete, html2`
@@ -7272,13 +7272,13 @@ var anchoredRegionTemplate = (context, definition) => html2`
     </template>
 `;
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/utilities/direction.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/utilities/direction.js
 var getDirection = (rootNode) => {
   const dirNode = rootNode.closest("[dir]");
   return dirNode !== null && dirNode.dir === "rtl" ? Direction.rtl : Direction.ltr;
 };
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/utilities/intersection-service.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/utilities/intersection-service.js
 var IntersectionService = class {
   constructor() {
     this.intersectionDetector = null;
@@ -7345,7 +7345,7 @@ var IntersectionService = class {
   }
 };
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/anchored-region/anchored-region.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/anchored-region/anchored-region.js
 var AnchoredRegion = class _AnchoredRegion extends FoundationElement {
   constructor() {
     super(...arguments);
@@ -7985,7 +7985,7 @@ __decorate([
   observable
 ], AnchoredRegion.prototype, "initialLayoutComplete", void 0);
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/anchored-region/anchored-region-config.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/anchored-region/anchored-region-config.js
 var horizontalAnchorOverlay = {
   horizontalDefaultPosition: "center",
   horizontalPositioningMode: "locktodefault",
@@ -7999,7 +7999,7 @@ var FlyoutPosTopFill = Object.assign(Object.assign({}, FlyoutPosTop), { vertical
 var FlyoutPosBottomFill = Object.assign(Object.assign({}, FlyoutPosBottom), { verticalScaling: "fill" });
 var FlyoutPosTallestFill = Object.assign(Object.assign({}, FlyoutPosTallest), { verticalScaling: "fill" });
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/avatar/avatar.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/avatar/avatar.js
 var Avatar = class extends FoundationElement {
   /**
    * Internal
@@ -8024,7 +8024,7 @@ __decorate([
   attr
 ], Avatar.prototype, "shape", void 0);
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/badge/badge.template.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/badge/badge.template.js
 var badgeTemplate = (context, definition) => html2`
     <template class="${(x) => x.circular ? "circular" : ""}">
         <div class="control" part="control" style="${(x) => x.generateBadgeStyle()}">
@@ -8033,7 +8033,7 @@ var badgeTemplate = (context, definition) => html2`
     </template>
 `;
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/badge/badge.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/badge/badge.js
 var Badge = class extends FoundationElement {
   constructor() {
     super(...arguments);
@@ -8063,7 +8063,7 @@ __decorate([
   attr({ mode: "boolean" })
 ], Badge.prototype, "circular", void 0);
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/breadcrumb-item/breadcrumb-item.template.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/breadcrumb-item/breadcrumb-item.template.js
 var breadcrumbItemTemplate = (context, definition) => html2`
     <div role="listitem" class="listitem" part="listitem">
         ${when((x) => x.href && x.href.length > 0, html2`
@@ -8082,7 +8082,7 @@ var breadcrumbItemTemplate = (context, definition) => html2`
     </div>
 `;
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/breadcrumb-item/breadcrumb-item.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/breadcrumb-item/breadcrumb-item.js
 var BreadcrumbItem = class extends Anchor {
   constructor() {
     super(...arguments);
@@ -8094,7 +8094,7 @@ __decorate([
 ], BreadcrumbItem.prototype, "separator", void 0);
 applyMixins(BreadcrumbItem, StartEnd, DelegatesARIALink);
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/breadcrumb/breadcrumb.template.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/breadcrumb/breadcrumb.template.js
 var breadcrumbTemplate = (context, definition) => html2`
     <template role="navigation">
         <div role="list" class="list" part="list">
@@ -8105,7 +8105,7 @@ var breadcrumbTemplate = (context, definition) => html2`
     </template>
 `;
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/breadcrumb/breadcrumb.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/breadcrumb/breadcrumb.js
 var Breadcrumb = class extends FoundationElement {
   slottedBreadcrumbItemsChanged() {
     if (this.$fastController.isConnected) {
@@ -8156,7 +8156,7 @@ __decorate([
   observable
 ], Breadcrumb.prototype, "slottedBreadcrumbItems", void 0);
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/button/button.template.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/button/button.template.js
 var buttonTemplate = (context, definition) => html2`
     <button
         class="control"
@@ -8203,7 +8203,7 @@ var buttonTemplate = (context, definition) => html2`
     </button>
 `;
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/form-associated/form-associated.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/form-associated/form-associated.js
 var proxySlotName = "form-associated-proxy";
 var ElementInternalsKey = "ElementInternals";
 var supportsElementInternals = ElementInternalsKey in window && "setFormValue" in window[ElementInternalsKey].prototype;
@@ -8587,7 +8587,7 @@ function CheckableFormAssociated(BaseCtor) {
   return D;
 }
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/button/button.form-associated.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/button/button.form-associated.js
 var _Button = class extends FoundationElement {
 };
 var FormAssociatedButton = class extends FormAssociated(_Button) {
@@ -8597,7 +8597,7 @@ var FormAssociatedButton = class extends FormAssociated(_Button) {
   }
 };
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/button/button.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/button/button.js
 var Button = class extends FormAssociatedButton {
   constructor() {
     super(...arguments);
@@ -8738,7 +8738,7 @@ __decorate([
 applyMixins(DelegatesARIAButton, ARIAGlobalStatesAndProperties);
 applyMixins(Button, StartEnd, DelegatesARIAButton);
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/calendar/date-formatter.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/calendar/date-formatter.js
 var DateFormatter = class {
   constructor(config) {
     this.dayFormat = "numeric";
@@ -8854,7 +8854,7 @@ var DateFormatter = class {
   }
 };
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/calendar/calendar.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/calendar/calendar.js
 var Calendar = class extends FoundationElement {
   constructor() {
     super(...arguments);
@@ -9057,7 +9057,7 @@ __decorate([
   attr({ attribute: "selected-dates" })
 ], Calendar.prototype, "selectedDates", void 0);
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/data-grid/data-grid.options.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/data-grid/data-grid.options.js
 var GenerateHeaderOptions = {
   none: "none",
   default: "default",
@@ -9074,7 +9074,7 @@ var DataGridRowTypes = {
   stickyHeader: "sticky-header"
 };
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/data-grid/data-grid-row.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/data-grid/data-grid-row.js
 var DataGridRow = class extends FoundationElement {
   constructor() {
     super(...arguments);
@@ -9226,7 +9226,7 @@ __decorate([
   observable
 ], DataGridRow.prototype, "cellElements", void 0);
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/data-grid/data-grid.template.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/data-grid/data-grid.template.js
 function createRowItemTemplate(context) {
   const rowTag = context.tagFor(DataGridRow);
   return html2`
@@ -9256,7 +9256,7 @@ var dataGridTemplate = (context, definition) => {
     `;
 };
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/data-grid/data-grid.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/data-grid/data-grid.js
 var DataGrid = class _DataGrid extends FoundationElement {
   constructor() {
     super();
@@ -9612,7 +9612,7 @@ __decorate([
   observable
 ], DataGrid.prototype, "rowElements", void 0);
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/data-grid/data-grid-cell.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/data-grid/data-grid-cell.js
 var defaultCellContentsTemplate = html2`
     <template>
         ${(x) => x.rowData === null || x.columnDefinition === null || x.columnDefinition.columnDataKey === null ? null : x.rowData[x.columnDefinition.columnDataKey]}
@@ -9786,7 +9786,7 @@ __decorate([
   observable
 ], DataGridCell.prototype, "columnDefinition", void 0);
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/data-grid/data-grid-row.template.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/data-grid/data-grid-row.template.js
 function createCellItemTemplate(context) {
   const cellTag = context.tagFor(DataGridCell);
   return html2`
@@ -9827,7 +9827,7 @@ var dataGridRowTemplate = (context, definition) => {
     `;
 };
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/data-grid/data-grid-cell.template.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/data-grid/data-grid-cell.template.js
 var dataGridCellTemplate = (context, definition) => {
   return html2`
         <template
@@ -9842,7 +9842,7 @@ var dataGridCellTemplate = (context, definition) => {
     `;
 };
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/calendar/calendar.template.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/calendar/calendar.template.js
 var CalendarTitleTemplate = html2`
     <div
         class="title"
@@ -9980,16 +9980,16 @@ var calendarTemplate = (context, definition) => {
     `;
 };
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/card/card.template.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/card/card.template.js
 var cardTemplate = (context, definition) => html2`
     <slot></slot>
 `;
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/card/card.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/card/card.js
 var Card = class extends FoundationElement {
 };
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/checkbox/checkbox.template.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/checkbox/checkbox.template.js
 var checkboxTemplate = (context, definition) => html2`
     <template
         role="checkbox"
@@ -10019,7 +10019,7 @@ var checkboxTemplate = (context, definition) => html2`
     </template>
 `;
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/checkbox/checkbox.form-associated.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/checkbox/checkbox.form-associated.js
 var _Checkbox = class extends FoundationElement {
 };
 var FormAssociatedCheckbox = class extends CheckableFormAssociated(_Checkbox) {
@@ -10029,7 +10029,7 @@ var FormAssociatedCheckbox = class extends CheckableFormAssociated(_Checkbox) {
   }
 };
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/checkbox/checkbox.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/checkbox/checkbox.js
 var Checkbox = class extends FormAssociatedCheckbox {
   constructor() {
     super();
@@ -10074,7 +10074,7 @@ __decorate([
   observable
 ], Checkbox.prototype, "indeterminate", void 0);
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/listbox-option/listbox-option.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/listbox-option/listbox-option.js
 function isListboxOption(el) {
   return isHTMLElement(el) && (el.getAttribute("role") === "option" || el instanceof HTMLOptionElement);
 }
@@ -10227,7 +10227,7 @@ __decorate([
 applyMixins(DelegatesARIAListboxOption, ARIAGlobalStatesAndProperties);
 applyMixins(ListboxOption, StartEnd, DelegatesARIAListboxOption);
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/listbox/listbox.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/listbox/listbox.js
 var Listbox = class _Listbox extends FoundationElement {
   constructor() {
     super(...arguments);
@@ -10672,13 +10672,13 @@ __decorate([
 applyMixins(DelegatesARIAListbox, ARIAGlobalStatesAndProperties);
 applyMixins(Listbox, DelegatesARIAListbox);
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/select/select.options.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/select/select.options.js
 var SelectPosition = {
   above: "above",
   below: "below"
 };
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/combobox/combobox.form-associated.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/combobox/combobox.form-associated.js
 var _Combobox = class extends Listbox {
 };
 var FormAssociatedCombobox = class extends FormAssociated(_Combobox) {
@@ -10688,7 +10688,7 @@ var FormAssociatedCombobox = class extends FormAssociated(_Combobox) {
   }
 };
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/combobox/combobox.options.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/combobox/combobox.options.js
 var ComboboxAutocomplete = {
   inline: "inline",
   list: "list",
@@ -10696,7 +10696,7 @@ var ComboboxAutocomplete = {
   none: "none"
 };
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/combobox/combobox.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/combobox/combobox.js
 var Combobox = class extends FormAssociatedCombobox {
   constructor() {
     super(...arguments);
@@ -11200,7 +11200,7 @@ __decorate([
 applyMixins(DelegatesARIACombobox, DelegatesARIAListbox);
 applyMixins(Combobox, StartEnd, DelegatesARIACombobox);
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/combobox/combobox.template.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/combobox/combobox.template.js
 var comboboxTemplate = (context, definition) => html2`
     <template
         aria-disabled="${(x) => x.ariaDisabled}"
@@ -11261,7 +11261,7 @@ var comboboxTemplate = (context, definition) => html2`
     </template>
 `;
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/utilities/composed-parent.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/utilities/composed-parent.js
 function composedParent(element) {
   const parentNode = element.parentElement;
   if (parentNode) {
@@ -11275,7 +11275,7 @@ function composedParent(element) {
   return null;
 }
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/utilities/composed-contains.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/utilities/composed-contains.js
 function composedContains(reference, test) {
   let current = test;
   while (current !== null) {
@@ -11287,7 +11287,7 @@ function composedContains(reference, test) {
   return false;
 }
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/design-token/custom-property-manager.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/design-token/custom-property-manager.js
 var defaultElement = document.createElement("div");
 function isFastElement(element) {
   return element instanceof FASTElement;
@@ -11455,7 +11455,7 @@ var PropertyTargetManager = Object.freeze({
   }
 });
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/design-token/design-token.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/design-token/design-token.js
 var DesignTokenImpl = class _DesignTokenImpl extends CSSDirective {
   constructor(configuration) {
     super();
@@ -12014,7 +12014,7 @@ var DesignToken = Object.freeze({
   }
 });
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/design-system/design-system.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/design-system/design-system.js
 var ElementDisambiguation = Object.freeze({
   /**
    * Skip defining the element but still call the provided callback passed
@@ -12206,7 +12206,7 @@ var ElementDefinitionEntry = class {
   }
 };
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/dialog/dialog.template.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/dialog/dialog.template.js
 var dialogTemplate = (context, definition) => html2`
     <div class="positioning-region" part="positioning-region">
         ${when((x) => x.modal, html2`
@@ -12233,7 +12233,7 @@ var dialogTemplate = (context, definition) => html2`
     </div>
 `;
 
-// ../sdk/node_modules/tabbable/dist/index.esm.js
+// ../web-component-sdk/node_modules/tabbable/dist/index.esm.js
 var candidateSelectors = ["input", "select", "textarea", "a[href]", "button", "[tabindex]:not(slot)", "audio[controls]", "video[controls]", '[contenteditable]:not([contenteditable="false"])', "details>summary:first-of-type", "details"];
 var candidateSelector = candidateSelectors.join(",");
 var NoElement = typeof Element === "undefined";
@@ -12394,7 +12394,7 @@ var isFocusable = function isFocusable2(node, options) {
   return isNodeMatchingSelectorFocusable(options, node);
 };
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/dialog/dialog.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/dialog/dialog.js
 var Dialog = class _Dialog extends FoundationElement {
   constructor() {
     super(...arguments);
@@ -12604,7 +12604,7 @@ __decorate([
   attr({ attribute: "aria-label" })
 ], Dialog.prototype, "ariaLabel", void 0);
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/directives/reflect-attributes.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/directives/reflect-attributes.js
 var observer = new MutationObserver((mutations) => {
   for (const mutation of mutations) {
     AttributeReflectionSubscriptionSet.getOrCreateFor(mutation.target).notify(mutation.attributeName);
@@ -12645,7 +12645,7 @@ var AttributeReflectionSubscriptionSet = class _AttributeReflectionSubscriptionS
 };
 AttributeReflectionSubscriptionSet.subscriberCache = /* @__PURE__ */ new WeakMap();
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/disclosure/disclosure.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/disclosure/disclosure.js
 var Disclosure = class extends FoundationElement {
   /**
    * @internal
@@ -12704,12 +12704,12 @@ __decorate([
   attr
 ], Disclosure.prototype, "title", void 0);
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/divider/divider.template.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/divider/divider.template.js
 var dividerTemplate = (context, definition) => html2`
     <template role="${(x) => x.role}" aria-orientation="${(x) => x.orientation}"></template>
 `;
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/divider/divider.options.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/divider/divider.options.js
 var DividerRole = {
   /**
    * The divider semantically separates content
@@ -12721,7 +12721,7 @@ var DividerRole = {
   presentation: "presentation"
 };
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/divider/divider.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/divider/divider.js
 var Divider = class extends FoundationElement {
   constructor() {
     super(...arguments);
@@ -12736,13 +12736,13 @@ __decorate([
   attr
 ], Divider.prototype, "orientation", void 0);
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/flipper/flipper.options.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/flipper/flipper.options.js
 var FlipperDirection = {
   next: "next",
   previous: "previous"
 };
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/flipper/flipper.template.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/flipper/flipper.template.js
 var flipperTemplate = (context, definition) => html2`
     <template
         role="button"
@@ -12768,7 +12768,7 @@ var flipperTemplate = (context, definition) => html2`
     </template>
 `;
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/flipper/flipper.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/flipper/flipper.js
 var Flipper = class extends FoundationElement {
   constructor() {
     super(...arguments);
@@ -12803,7 +12803,7 @@ __decorate([
   attr
 ], Flipper.prototype, "direction", void 0);
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/listbox-option/listbox-option.template.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/listbox-option/listbox-option.template.js
 var listboxOptionTemplate = (context, definition) => html2`
     <template
         aria-checked="${(x) => x.ariaChecked}"
@@ -12822,7 +12822,7 @@ var listboxOptionTemplate = (context, definition) => html2`
     </template>
 `;
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/listbox/listbox.element.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/listbox/listbox.element.js
 var ListboxElement = class extends Listbox {
   constructor() {
     super(...arguments);
@@ -13238,7 +13238,7 @@ __decorate([
   attr({ converter: nullableNumberConverter })
 ], ListboxElement.prototype, "size", void 0);
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/listbox/listbox.template.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/listbox/listbox.template.js
 var listboxTemplate = (context, definition) => html2`
     <template
         aria-activedescendant="${(x) => x.ariaActiveDescendant}"
@@ -13261,7 +13261,7 @@ var listboxTemplate = (context, definition) => html2`
     </template>
 `;
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/picker/picker-menu.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/picker/picker-menu.js
 var PickerMenu = class extends FoundationElement {
   constructor() {
     super(...arguments);
@@ -13308,7 +13308,7 @@ __decorate([
   observable
 ], PickerMenu.prototype, "suggestionsAvailableText", void 0);
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/picker/picker-menu-option.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/picker/picker-menu-option.js
 var defaultContentsTemplate = html2`
     <template>
         ${(x) => x.value}
@@ -13362,7 +13362,7 @@ __decorate([
   observable
 ], PickerMenuOption.prototype, "contentsTemplate", void 0);
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/picker/picker-list-item.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/picker/picker-list-item.js
 var defaultContentsTemplate2 = html2`
     <template>
         ${(x) => x.value}
@@ -13425,7 +13425,7 @@ __decorate([
   observable
 ], PickerListItem.prototype, "contentsTemplate", void 0);
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/picker/picker.form-associated.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/picker/picker.form-associated.js
 var _Picker = class extends FoundationElement {
 };
 var FormAssociatedPicker = class extends FormAssociated(_Picker) {
@@ -13435,7 +13435,7 @@ var FormAssociatedPicker = class extends FormAssociated(_Picker) {
   }
 };
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/picker/picker.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/picker/picker.js
 var pickerInputTemplate = html2`
     <input
         slot="input-region"
@@ -14026,7 +14026,7 @@ __decorate([
   observable
 ], Picker.prototype, "selectedItems", void 0);
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/menu-item/menu-item.options.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/menu-item/menu-item.options.js
 var MenuItemRole = {
   /**
    * The menu item has a "menuitem" role
@@ -14047,7 +14047,7 @@ var roleForMenuItem = {
   [MenuItemRole.menuitemradio]: "menuitemradio"
 };
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/menu-item/menu-item.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/menu-item/menu-item.js
 var MenuItem = class extends FoundationElement {
   constructor() {
     super(...arguments);
@@ -14222,7 +14222,7 @@ __decorate([
 ], MenuItem.prototype, "submenu", void 0);
 applyMixins(MenuItem, StartEnd);
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/menu-item/menu-item.template.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/menu-item/menu-item.template.js
 var menuItemTemplate = (context, definition) => html2`
     <template
         role="${(x) => x.role}"
@@ -14292,7 +14292,7 @@ var menuItemTemplate = (context, definition) => html2`
     </template>
 `;
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/menu/menu.template.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/menu/menu.template.js
 var menuTemplate = (context, definition) => html2`
     <template
         slot="${(x) => x.slot ? x.slot : x.isNestedMenu() ? "submenu" : void 0}"
@@ -14304,7 +14304,7 @@ var menuTemplate = (context, definition) => html2`
     </template>
 `;
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/menu/menu.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/menu/menu.js
 var Menu = class _Menu extends FoundationElement {
   constructor() {
     super(...arguments);
@@ -14529,7 +14529,7 @@ __decorate([
   observable
 ], Menu.prototype, "items", void 0);
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/number-field/number-field.template.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/number-field/number-field.template.js
 var numberFieldTemplate = (context, definition) => html2`
     <template class="${(x) => x.readOnly ? "readonly" : ""}">
         <label
@@ -14607,7 +14607,7 @@ var numberFieldTemplate = (context, definition) => html2`
     </template>
 `;
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/text-field/text-field.form-associated.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/text-field/text-field.form-associated.js
 var _TextField = class extends FoundationElement {
 };
 var FormAssociatedTextField = class extends FormAssociated(_TextField) {
@@ -14617,7 +14617,7 @@ var FormAssociatedTextField = class extends FormAssociated(_TextField) {
   }
 };
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/text-field/text-field.options.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/text-field/text-field.options.js
 var TextFieldType = {
   /**
    * An email TextField
@@ -14641,7 +14641,7 @@ var TextFieldType = {
   url: "url"
 };
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/text-field/text-field.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/text-field/text-field.js
 var TextField = class extends FormAssociatedTextField {
   constructor() {
     super(...arguments);
@@ -14788,7 +14788,7 @@ var DelegatesARIATextbox = class {
 applyMixins(DelegatesARIATextbox, ARIAGlobalStatesAndProperties);
 applyMixins(TextField, StartEnd, DelegatesARIATextbox);
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/number-field/number-field.form-associated.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/number-field/number-field.form-associated.js
 var _NumberField = class extends FoundationElement {
 };
 var FormAssociatedNumberField = class extends FormAssociated(_NumberField) {
@@ -14798,7 +14798,7 @@ var FormAssociatedNumberField = class extends FormAssociated(_NumberField) {
   }
 };
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/number-field/number-field.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/number-field/number-field.js
 var NumberField = class extends FormAssociatedNumberField {
   constructor() {
     super(...arguments);
@@ -15022,7 +15022,7 @@ __decorate([
 ], NumberField.prototype, "defaultSlottedNodes", void 0);
 applyMixins(NumberField, StartEnd, DelegatesARIATextbox);
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/progress-ring/progress-ring.template.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/progress-ring/progress-ring.template.js
 var progressSegments = 44;
 var progressRingTemplate = (context, definition) => html2`
     <template
@@ -15063,7 +15063,7 @@ var progressRingTemplate = (context, definition) => html2`
     </template>
 `;
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/progress/base-progress.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/progress/base-progress.js
 var BaseProgress = class extends FoundationElement {
   constructor() {
     super(...arguments);
@@ -15115,7 +15115,7 @@ __decorate([
   observable
 ], BaseProgress.prototype, "percentComplete", void 0);
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/progress/progress.template.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/progress/progress.template.js
 var progressTemplate = (context, defintion) => html2`
     <template
         role="progressbar"
@@ -15143,7 +15143,7 @@ var progressTemplate = (context, defintion) => html2`
     </template>
 `;
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/radio-group/radio-group.template.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/radio-group/radio-group.template.js
 var radioGroupTemplate = (context, definition) => html2`
     <template
         role="radiogroup"
@@ -15168,7 +15168,7 @@ var radioGroupTemplate = (context, definition) => html2`
     </template>
 `;
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/radio-group/radio-group.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/radio-group/radio-group.js
 var RadioGroup = class extends FoundationElement {
   constructor() {
     super(...arguments);
@@ -15500,7 +15500,7 @@ __decorate([
   observable
 ], RadioGroup.prototype, "slottedRadioButtons", void 0);
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/radio/radio.template.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/radio/radio.template.js
 var radioTemplate = (context, definition) => html2`
     <template
         role="radio"
@@ -15526,7 +15526,7 @@ var radioTemplate = (context, definition) => html2`
     </template>
 `;
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/radio/radio.form-associated.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/radio/radio.form-associated.js
 var _Radio = class extends FoundationElement {
 };
 var FormAssociatedRadio = class extends CheckableFormAssociated(_Radio) {
@@ -15536,7 +15536,7 @@ var FormAssociatedRadio = class extends CheckableFormAssociated(_Radio) {
   }
 };
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/radio/radio.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/radio/radio.js
 var Radio = class extends FormAssociatedRadio {
   constructor() {
     super();
@@ -15614,7 +15614,7 @@ __decorate([
   observable
 ], Radio.prototype, "defaultSlottedNodes", void 0);
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/horizontal-scroll/horizontal-scroll.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/horizontal-scroll/horizontal-scroll.js
 var HorizontalScroll = class extends FoundationElement {
   constructor() {
     super(...arguments);
@@ -15935,7 +15935,7 @@ __decorate([
   attr({ attribute: "view" })
 ], HorizontalScroll.prototype, "view", void 0);
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/horizontal-scroll/horizontal-scroll.template.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/horizontal-scroll/horizontal-scroll.template.js
 var horizontalScrollTemplate = (context, definition) => {
   var _a, _b;
   return html2`
@@ -15990,12 +15990,12 @@ var horizontalScrollTemplate = (context, definition) => {
 `;
 };
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/utilities/whitespace-filter.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/utilities/whitespace-filter.js
 function whitespaceFilter(value, index, array) {
   return value.nodeType !== Node.TEXT_NODE ? true : typeof value.nodeValue === "string" && !!value.nodeValue.trim().length;
 }
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/search/search.form-associated.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/search/search.form-associated.js
 var _Search = class extends FoundationElement {
 };
 var FormAssociatedSearch = class extends FormAssociated(_Search) {
@@ -16005,7 +16005,7 @@ var FormAssociatedSearch = class extends FormAssociated(_Search) {
   }
 };
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/search/search.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/search/search.js
 var Search = class extends FormAssociatedSearch {
   readOnlyChanged() {
     if (this.proxy instanceof HTMLInputElement) {
@@ -16138,7 +16138,7 @@ var DelegatesARIASearch = class {
 applyMixins(DelegatesARIASearch, ARIAGlobalStatesAndProperties);
 applyMixins(Search, StartEnd, DelegatesARIASearch);
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/select/select.form-associated.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/select/select.form-associated.js
 var _Select = class extends ListboxElement {
 };
 var FormAssociatedSelect = class extends FormAssociated(_Select) {
@@ -16148,7 +16148,7 @@ var FormAssociatedSelect = class extends FormAssociated(_Select) {
   }
 };
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/select/select.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/select/select.js
 var Select = class extends FormAssociatedSelect {
   constructor() {
     super(...arguments);
@@ -16574,7 +16574,7 @@ __decorate([
 applyMixins(DelegatesARIASelect, DelegatesARIAListbox);
 applyMixins(Select, StartEnd, DelegatesARIASelect);
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/select/select.template.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/select/select.template.js
 var selectTemplate = (context, definition) => html2`
     <template
         class="${(x) => [
@@ -16639,7 +16639,7 @@ var selectTemplate = (context, definition) => html2`
     </template>
 `;
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/skeleton/skeleton.template.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/skeleton/skeleton.template.js
 var skeletonTemplate = (context, definition) => html2`
     <template
         class="${(x) => x.shape === "circle" ? "circle" : "rect"}"
@@ -16656,7 +16656,7 @@ var skeletonTemplate = (context, definition) => html2`
     </template>
 `;
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/skeleton/skeleton.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/skeleton/skeleton.js
 var Skeleton = class extends FoundationElement {
   constructor() {
     super(...arguments);
@@ -16676,7 +16676,7 @@ __decorate([
   attr({ mode: "boolean" })
 ], Skeleton.prototype, "shimmer", void 0);
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/slider-label/slider-label.template.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/slider-label/slider-label.template.js
 var sliderLabelTemplate = (context, definition) => html2`
     <template
         aria-disabled="${(x) => x.disabled}"
@@ -16696,7 +16696,7 @@ var sliderLabelTemplate = (context, definition) => html2`
     </template>
 `;
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/slider/slider-utilities.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/slider/slider-utilities.js
 function convertPixelToPercent(pixelPos, minPosition, maxPosition, direction2) {
   let pct = limit(0, 1, (pixelPos - minPosition) / (maxPosition - minPosition));
   if (direction2 === Direction.rtl) {
@@ -16705,7 +16705,7 @@ function convertPixelToPercent(pixelPos, minPosition, maxPosition, direction2) {
   return pct;
 }
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/slider-label/slider-label.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/slider-label/slider-label.js
 var defaultConfig = {
   min: 0,
   max: 0,
@@ -16834,7 +16834,7 @@ __decorate([
   observable
 ], SliderLabel.prototype, "sliderDirection", void 0);
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/slider/slider.template.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/slider/slider.template.js
 var sliderTemplate = (context, definition) => html2`
     <template
         role="slider"
@@ -16870,7 +16870,7 @@ var sliderTemplate = (context, definition) => html2`
     </template>
 `;
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/slider/slider.form-associated.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/slider/slider.form-associated.js
 var _Slider = class extends FoundationElement {
 };
 var FormAssociatedSlider = class extends FormAssociated(_Slider) {
@@ -16880,7 +16880,7 @@ var FormAssociatedSlider = class extends FormAssociated(_Slider) {
   }
 };
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/slider/slider.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/slider/slider.js
 var SliderMode = {
   singleValue: "single-value"
 };
@@ -17190,7 +17190,7 @@ __decorate([
   attr
 ], Slider.prototype, "mode", void 0);
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/switch/switch.template.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/switch/switch.template.js
 var switchTemplate = (context, definition) => html2`
     <template
         role="switch"
@@ -17222,7 +17222,7 @@ var switchTemplate = (context, definition) => html2`
     </template>
 `;
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/switch/switch.form-associated.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/switch/switch.form-associated.js
 var _Switch = class extends FoundationElement {
 };
 var FormAssociatedSwitch = class extends CheckableFormAssociated(_Switch) {
@@ -17232,7 +17232,7 @@ var FormAssociatedSwitch = class extends CheckableFormAssociated(_Switch) {
   }
 };
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/switch/switch.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/switch/switch.js
 var Switch = class extends FormAssociatedSwitch {
   constructor() {
     super();
@@ -17276,32 +17276,32 @@ __decorate([
   observable
 ], Switch.prototype, "defaultSlottedNodes", void 0);
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/tab-panel/tab-panel.template.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/tab-panel/tab-panel.template.js
 var tabPanelTemplate = (context, definition) => html2`
     <template slot="tabpanel" role="tabpanel">
         <slot></slot>
     </template>
 `;
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/tab-panel/tab-panel.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/tab-panel/tab-panel.js
 var TabPanel = class extends FoundationElement {
 };
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/tab/tab.template.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/tab/tab.template.js
 var tabTemplate = (context, definition) => html2`
     <template slot="tab" role="tab" aria-disabled="${(x) => x.disabled}">
         <slot></slot>
     </template>
 `;
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/tab/tab.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/tab/tab.js
 var Tab = class extends FoundationElement {
 };
 __decorate([
   attr({ mode: "boolean" })
 ], Tab.prototype, "disabled", void 0);
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/tabs/tabs.template.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/tabs/tabs.template.js
 var tabsTemplate = (context, definition) => html2`
     <template class="${(x) => x.orientation}">
         ${startSlotTemplate(context, definition)}
@@ -17323,7 +17323,7 @@ var tabsTemplate = (context, definition) => html2`
     </template>
 `;
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/tabs/tabs.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/tabs/tabs.js
 var TabsOrientation = {
   vertical: "vertical",
   horizontal: "horizontal"
@@ -17632,7 +17632,7 @@ __decorate([
 ], Tabs.prototype, "showActiveIndicator", void 0);
 applyMixins(Tabs, StartEnd);
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/text-area/text-area.form-associated.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/text-area/text-area.form-associated.js
 var _TextArea = class extends FoundationElement {
 };
 var FormAssociatedTextArea = class extends FormAssociated(_TextArea) {
@@ -17642,7 +17642,7 @@ var FormAssociatedTextArea = class extends FormAssociated(_TextArea) {
   }
 };
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/text-area/text-area.options.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/text-area/text-area.options.js
 var TextAreaResize = {
   /**
    * No resize.
@@ -17662,7 +17662,7 @@ var TextAreaResize = {
   vertical: "vertical"
 };
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/text-area/text-area.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/text-area/text-area.js
 var TextArea = class extends FormAssociatedTextArea {
   constructor() {
     super(...arguments);
@@ -17769,7 +17769,7 @@ __decorate([
 ], TextArea.prototype, "defaultSlottedNodes", void 0);
 applyMixins(TextArea, DelegatesARIATextbox);
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/text-area/text-area.template.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/text-area/text-area.template.js
 var textAreaTemplate = (context, definition) => html2`
     <template
         class="
@@ -17827,7 +17827,7 @@ var textAreaTemplate = (context, definition) => html2`
     </template>
 `;
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/text-field/text-field.template.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/text-field/text-field.template.js
 var textFieldTemplate = (context, definition) => html2`
     <template
         class="
@@ -17890,7 +17890,7 @@ var textFieldTemplate = (context, definition) => html2`
     </template>
 `;
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/toolbar/toolbar.template.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/toolbar/toolbar.template.js
 var toolbarTemplate = (context, definition) => html2`
     <template
         aria-label="${(x) => x.ariaLabel}"
@@ -17922,7 +17922,7 @@ var toolbarTemplate = (context, definition) => html2`
     </template>
 `;
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/utilities/root-active-element.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/utilities/root-active-element.js
 function getRootActiveElement(element) {
   const rootNode = element.getRootNode();
   if (rootNode instanceof ShadowRoot) {
@@ -17931,7 +17931,7 @@ function getRootActiveElement(element) {
   return document.activeElement;
 }
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/toolbar/toolbar.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/toolbar/toolbar.js
 var ToolbarArrowKeyMap = Object.freeze({
   [ArrowKeys.ArrowUp]: {
     [Orientation.vertical]: -1
@@ -18146,7 +18146,7 @@ __decorate([
 applyMixins(DelegatesARIAToolbar, ARIAGlobalStatesAndProperties);
 applyMixins(Toolbar, StartEnd, DelegatesARIAToolbar);
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/tooltip/tooltip.template.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/tooltip/tooltip.template.js
 var tooltipTemplate = (context, definition) => {
   return html2`
         ${when((x) => x.tooltipVisible, html2`
@@ -18174,7 +18174,7 @@ var tooltipTemplate = (context, definition) => {
     `;
 };
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/tooltip/tooltip.options.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/tooltip/tooltip.options.js
 var TooltipPosition = {
   /**
    * The tooltip is positioned above the element
@@ -18234,7 +18234,7 @@ var TooltipPosition = {
   bottomEnd: "bottom-end"
 };
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/tooltip/tooltip.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/tooltip/tooltip.js
 var Tooltip = class extends FoundationElement {
   constructor() {
     super(...arguments);
@@ -18586,7 +18586,7 @@ __decorate([
   observable
 ], Tooltip.prototype, "currentDirection", void 0);
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/tree-item/tree-item.template.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/tree-item/tree-item.template.js
 var treeItemTemplate = (context, definition) => html2`
     <template
         role="treeitem"
@@ -18632,7 +18632,7 @@ var treeItemTemplate = (context, definition) => html2`
     </template>
 `;
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/tree-item/tree-item.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/tree-item/tree-item.js
 function isTreeItemElement(el) {
   return isHTMLElement(el) && el.getAttribute("role") === "treeitem";
 }
@@ -18723,7 +18723,7 @@ __decorate([
 ], TreeItem.prototype, "renderCollapsedChildren", void 0);
 applyMixins(TreeItem, StartEnd);
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/tree-view/tree-view.template.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/tree-view/tree-view.template.js
 var treeViewTemplate = (context, definition) => html2`
     <template
         role="tree"
@@ -18738,7 +18738,7 @@ var treeViewTemplate = (context, definition) => html2`
     </template>
 `;
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/tree-view/tree-view.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/tree-view/tree-view.js
 var TreeView = class extends FoundationElement {
   constructor() {
     super(...arguments);
@@ -18939,7 +18939,7 @@ __decorate([
   observable
 ], TreeView.prototype, "slottedTreeItems", void 0);
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/utilities/match-media-stylesheet-behavior.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/utilities/match-media-stylesheet-behavior.js
 var MatchMediaBehavior = class {
   /**
    *
@@ -19049,7 +19049,7 @@ var forcedColorsStylesheetBehavior = MatchMediaStyleSheetBehavior.with(window.ma
 var darkModeStylesheetBehavior = MatchMediaStyleSheetBehavior.with(window.matchMedia("(prefers-color-scheme: dark)"));
 var lightModeStylesheetBehavior = MatchMediaStyleSheetBehavior.with(window.matchMedia("(prefers-color-scheme: light)"));
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/utilities/property-stylesheet-behavior.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/utilities/property-stylesheet-behavior.js
 var PropertyStyleSheetBehavior = class {
   /**
    * Constructs a {@link PropertyStyleSheetBehavior} instance.
@@ -19094,19 +19094,19 @@ var PropertyStyleSheetBehavior = class {
   }
 };
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/utilities/style/disabled.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/utilities/style/disabled.js
 var disabledCursor = "not-allowed";
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/utilities/style/display.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/utilities/style/display.js
 var hidden = `:host([hidden]){display:none}`;
 function display(displayValue) {
   return `${hidden}:host{display:${displayValue}}`;
 }
 
-// ../sdk/node_modules/@microsoft/fast-foundation/dist/esm/utilities/style/focus.js
+// ../web-component-sdk/node_modules/@microsoft/fast-foundation/dist/esm/utilities/style/focus.js
 var focusVisible = canUseFocusVisible() ? "focus-visible" : "focus";
 
-// ../sdk/node_modules/@microsoft/fast-colors/dist/math-utilities.js
+// ../web-component-sdk/node_modules/@microsoft/fast-colors/dist/math-utilities.js
 function clamp(i, min, max) {
   if (isNaN(i) || i <= min) {
     return min;
@@ -19169,7 +19169,7 @@ function roundToPrecisionSmall(i, precision) {
   return Math.round(i * factor) / factor;
 }
 
-// ../sdk/node_modules/@microsoft/fast-colors/dist/color-hsl.js
+// ../web-component-sdk/node_modules/@microsoft/fast-colors/dist/color-hsl.js
 var ColorHSL = class _ColorHSL {
   constructor(hue, sat, lum) {
     this.h = hue;
@@ -19207,7 +19207,7 @@ var ColorHSL = class _ColorHSL {
   }
 };
 
-// ../sdk/node_modules/@microsoft/fast-colors/dist/color-hsv.js
+// ../web-component-sdk/node_modules/@microsoft/fast-colors/dist/color-hsv.js
 var ColorHSV = class _ColorHSV {
   constructor(hue, sat, val) {
     this.h = hue;
@@ -19245,7 +19245,7 @@ var ColorHSV = class _ColorHSV {
   }
 };
 
-// ../sdk/node_modules/@microsoft/fast-colors/dist/color-lab.js
+// ../web-component-sdk/node_modules/@microsoft/fast-colors/dist/color-lab.js
 var ColorLAB = class _ColorLAB {
   constructor(l, a, b) {
     this.l = l;
@@ -19285,7 +19285,7 @@ var ColorLAB = class _ColorLAB {
 ColorLAB.epsilon = 216 / 24389;
 ColorLAB.kappa = 24389 / 27;
 
-// ../sdk/node_modules/@microsoft/fast-colors/dist/color-lch.js
+// ../web-component-sdk/node_modules/@microsoft/fast-colors/dist/color-lch.js
 var ColorLCH = class _ColorLCH {
   constructor(l, c, h) {
     this.l = l;
@@ -19324,7 +19324,7 @@ var ColorLCH = class _ColorLCH {
   }
 };
 
-// ../sdk/node_modules/@microsoft/fast-colors/dist/color-rgba-64.js
+// ../web-component-sdk/node_modules/@microsoft/fast-colors/dist/color-rgba-64.js
 var ColorRGBA64 = class _ColorRGBA64 {
   /**
    *
@@ -19409,7 +19409,7 @@ var ColorRGBA64 = class _ColorRGBA64 {
   }
 };
 
-// ../sdk/node_modules/@microsoft/fast-colors/dist/color-xyz.js
+// ../web-component-sdk/node_modules/@microsoft/fast-colors/dist/color-xyz.js
 var ColorXYZ = class _ColorXYZ {
   constructor(x, y, z) {
     this.x = x;
@@ -19448,7 +19448,7 @@ var ColorXYZ = class _ColorXYZ {
 };
 ColorXYZ.whitePoint = new ColorXYZ(0.95047, 1, 1.08883);
 
-// ../sdk/node_modules/@microsoft/fast-colors/dist/color-converters.js
+// ../web-component-sdk/node_modules/@microsoft/fast-colors/dist/color-converters.js
 function rgbToLinearLuminance(rgb) {
   return rgb.r * 0.2126 + rgb.g * 0.7152 + rgb.b * 0.0722;
 }
@@ -19716,7 +19716,7 @@ function lchToRGB(lch, alpha = 1) {
   return labToRGB(lchToLAB(lch), alpha);
 }
 
-// ../sdk/node_modules/@microsoft/fast-colors/dist/color-blending.js
+// ../web-component-sdk/node_modules/@microsoft/fast-colors/dist/color-blending.js
 function saturateViaLCH(input, saturation, saturationConstant = 18) {
   const lch = rgbToLCH(input);
   let sat = lch.c + saturation * saturationConstant;
@@ -19763,7 +19763,7 @@ function computeAlphaBlend(bottom, top) {
   return new ColorRGBA64(r, g, b, 1);
 }
 
-// ../sdk/node_modules/@microsoft/fast-colors/dist/color-interpolation.js
+// ../web-component-sdk/node_modules/@microsoft/fast-colors/dist/color-interpolation.js
 function interpolateRGB(position, left, right) {
   if (isNaN(position) || position <= 0) {
     return left;
@@ -19843,7 +19843,7 @@ function interpolateByColorSpace(position, space, left, right) {
   }
 }
 
-// ../sdk/node_modules/@microsoft/fast-colors/dist/color-scale.js
+// ../web-component-sdk/node_modules/@microsoft/fast-colors/dist/color-scale.js
 var ColorScale = class _ColorScale {
   constructor(stops) {
     if (stops == null || stops.length === 0) {
@@ -20000,7 +20000,7 @@ var ColorScale = class _ColorScale {
   }
 };
 
-// ../sdk/node_modules/@microsoft/fast-colors/dist/parse-color.js
+// ../web-component-sdk/node_modules/@microsoft/fast-colors/dist/parse-color.js
 var hexRGBRegex = /^#((?:[0-9a-f]{6}|[0-9a-f]{3}))$/i;
 function parseColorHexRGB(raw) {
   const result = hexRGBRegex.exec(raw);
@@ -20021,7 +20021,7 @@ function parseColorHexRGB(raw) {
   return new ColorRGBA64(normalize((rawInt & 16711680) >>> 16, 0, 255), normalize((rawInt & 65280) >>> 8, 0, 255), normalize(rawInt & 255, 0, 255), 1);
 }
 
-// ../sdk/node_modules/@microsoft/fast-colors/dist/color-palette.js
+// ../web-component-sdk/node_modules/@microsoft/fast-colors/dist/color-palette.js
 var ColorPalette = class _ColorPalette {
   constructor(config) {
     this.config = Object.assign({}, _ColorPalette.defaultPaletteConfig, config);
@@ -20157,7 +20157,7 @@ var defaultCenteredRescaleConfig = {
   scaleColorDark: ColorPalette.defaultPaletteConfig.scaleColorDark
 };
 
-// ../sdk/node_modules/@microsoft/fast-colors/dist/component-state-color-palette.js
+// ../web-component-sdk/node_modules/@microsoft/fast-colors/dist/component-state-color-palette.js
 var ComponentStateColorPalette = class _ComponentStateColorPalette {
   constructor(config) {
     this.palette = [];
@@ -20241,14 +20241,14 @@ ComponentStateColorPalette.defaultPaletteConfig = {
   steps: 94
 };
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/color/utilities/relative-luminance.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/color/utilities/relative-luminance.js
 function contrast(a, b) {
   const L1 = a.relativeLuminance > b.relativeLuminance ? a : b;
   const L2 = a.relativeLuminance > b.relativeLuminance ? b : a;
   return (L1.relativeLuminance + 0.05) / (L2.relativeLuminance + 0.05);
 }
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/color/swatch.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/color/swatch.js
 var SwatchRGB = Object.freeze({
   create(r, g, b) {
     return new SwatchRGBImpl(r, g, b);
@@ -20292,7 +20292,7 @@ var SwatchRGBImpl = class _SwatchRGBImpl extends ColorRGBA64 {
   }
 };
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/color/utilities/binary-search.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/color/utilities/binary-search.js
 function binarySearch(valuesToSearch, searchCondition, startIndex = 0, endIndex = valuesToSearch.length - 1) {
   if (endIndex === startIndex) {
     return valuesToSearch[startIndex];
@@ -20307,18 +20307,18 @@ function binarySearch(valuesToSearch, searchCondition, startIndex = 0, endIndex 
   );
 }
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/color/utilities/is-dark.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/color/utilities/is-dark.js
 var target = (-0.1 + Math.sqrt(0.21)) / 2;
 function isDark(color) {
   return color.relativeLuminance <= target;
 }
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/color/utilities/direction-by-is-dark.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/color/utilities/direction-by-is-dark.js
 function directionByIsDark(color) {
   return isDark(color) ? -1 : 1;
 }
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/color/palette.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/color/palette.js
 var defaultPaletteRGBOptions = {
   stepContrast: 1.03,
   stepContrastRamp: 0.03,
@@ -20535,14 +20535,14 @@ var PaletteRGBImpl = class _PaletteRGBImpl {
   }
 };
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/color/utilities/color-constants.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/color/utilities/color-constants.js
 var white = SwatchRGB.create(1, 1, 1);
 var black = SwatchRGB.create(0, 0, 0);
 var middleGrey = SwatchRGB.create(0.5, 0.5, 0.5);
 var base = parseColorHexRGB("#0078D4");
 var accentBase = SwatchRGB.create(base.r, base.g, base.b);
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/color/recipes/foreground-on-accent.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/color/recipes/foreground-on-accent.js
 function foregroundOnAccentSet(restFill, hoverFill, activeFill, focusFill, contrastTarget) {
   const defaultRule = (fill) => fill.contrast(white) >= contrastTarget ? white : black;
   const restForeground = defaultRule(restFill);
@@ -20557,7 +20557,7 @@ function foregroundOnAccentSet(restFill, hoverFill, activeFill, focusFill, contr
   };
 }
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/color/recipes/gradient-swatch.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/color/recipes/gradient-swatch.js
 var GradientSwatchRGB = class _GradientSwatchRGB {
   /**
    *
@@ -20587,7 +20587,7 @@ var GradientSwatchRGB = class _GradientSwatchRGB {
   }
 };
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/color/recipes/gradient-shadow-stroke.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/color/recipes/gradient-shadow-stroke.js
 var black2 = new ColorRGBA64(0, 0, 0);
 var white2 = new ColorRGBA64(1, 1, 1);
 function gradientShadowStroke(palette, reference, restDelta, hoverDelta, activeDelta, focusDelta, shadowDelta, direction2, shadowPercentage = 10, blendWithReference = false) {
@@ -20633,7 +20633,7 @@ function gradientShadowStroke(palette, reference, restDelta, hoverDelta, activeD
   };
 }
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/color/recipes/underline-stroke.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/color/recipes/underline-stroke.js
 function underlineStroke(palette, reference, restDelta, hoverDelta, activeDelta, focusDelta, shadowDelta, width) {
   const referenceIndex = palette.closestIndexOf(reference);
   const direction2 = directionByIsDark(reference);
@@ -20660,12 +20660,12 @@ function underlineStroke(palette, reference, restDelta, hoverDelta, activeDelta,
   };
 }
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/color/recipes/contrast-swatch.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/color/recipes/contrast-swatch.js
 function contrastSwatch(palette, reference, contrast2) {
   return palette.colorContrast(reference, contrast2);
 }
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/color/recipes/contrast-and-delta-swatch-set.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/color/recipes/contrast-and-delta-swatch-set.js
 function contrastAndDeltaSwatchSet(palette, reference, baseContrast, restDelta, hoverDelta, activeDelta, focusDelta, direction2) {
   if (direction2 === null || direction2 === void 0) {
     direction2 = directionByIsDark(reference);
@@ -20686,12 +20686,12 @@ function contrastAndDeltaSwatchSetByLuminance(palette, reference, lightBaseContr
   }
 }
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/color/recipes/delta-swatch.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/color/recipes/delta-swatch.js
 function deltaSwatch(palette, reference, delta) {
   return palette.get(palette.closestIndexOf(reference) + directionByIsDark(reference) * delta);
 }
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/color/recipes/delta-swatch-set.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/color/recipes/delta-swatch-set.js
 function deltaSwatchSet(palette, reference, restDelta, hoverDelta, activeDelta, focusDelta, direction2) {
   const referenceIndex = palette.closestIndexOf(reference);
   if (direction2 === null || direction2 === void 0) {
@@ -20712,7 +20712,7 @@ function deltaSwatchSetByLuminance(palette, reference, lightRestDelta, lightHove
   }
 }
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/color/recipes/focus-stroke.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/color/recipes/focus-stroke.js
 function focusStrokeOuter(palette, reference) {
   return isDark(reference) ? white : black;
 }
@@ -20720,7 +20720,7 @@ function focusStrokeInner(palette, reference, focusColor) {
   return isDark(reference) ? black : white;
 }
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/color/utilities/base-layer-luminance.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/color/utilities/base-layer-luminance.js
 function baseLayerLuminanceSwatch(luminance) {
   return SwatchRGB.create(luminance, luminance, luminance);
 }
@@ -20730,7 +20730,7 @@ var StandardLuminance;
   StandardLuminance2[StandardLuminance2["DarkMode"] = 0.15] = "DarkMode";
 })(StandardLuminance || (StandardLuminance = {}));
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/color/recipes/neutral-layer-1.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/color/recipes/neutral-layer-1.js
 function neutralLayer1Index(palette, baseLayerLuminance2) {
   return palette.closestIndexOf(baseLayerLuminanceSwatch(baseLayerLuminance2));
 }
@@ -20738,27 +20738,27 @@ function neutralLayer1(palette, baseLayerLuminance2) {
   return palette.get(neutralLayer1Index(palette, baseLayerLuminance2));
 }
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/color/recipes/neutral-layer-floating.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/color/recipes/neutral-layer-floating.js
 function neutralLayerFloating(palette, baseLayerLuminance2, layerDelta) {
   return palette.get(neutralLayer1Index(palette, baseLayerLuminance2) + layerDelta);
 }
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/color/recipes/neutral-layer-2.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/color/recipes/neutral-layer-2.js
 function neutralLayer2(palette, baseLayerLuminance2, layerDelta) {
   return palette.get(neutralLayer1Index(palette, baseLayerLuminance2) + layerDelta * -1);
 }
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/color/recipes/neutral-layer-3.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/color/recipes/neutral-layer-3.js
 function neutralLayer3(palette, baseLayerLuminance2, layerDelta) {
   return palette.get(neutralLayer1Index(palette, baseLayerLuminance2) + layerDelta * -1 * 2);
 }
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/color/recipes/neutral-layer-4.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/color/recipes/neutral-layer-4.js
 function neutralLayer4(palette, baseLayerLuminance2, layerDelta) {
   return palette.get(neutralLayer1Index(palette, baseLayerLuminance2) + layerDelta * -1 * 3);
 }
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/utilities/type-ramp.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/utilities/type-ramp.js
 var StandardFontWeight = {
   Thin: 100,
   ExtraLight: 200,
@@ -20771,7 +20771,7 @@ var StandardFontWeight = {
   Black: 900
 };
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/design-tokens.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/design-tokens.js
 var { create: create3 } = DesignToken;
 function createNonCss(name) {
   return DesignToken.create({ name, cssCustomPropertyName: null });
@@ -21111,7 +21111,7 @@ var neutralFillInverseHover = create3("neutral-fill-inverse-hover").withDefault(
 var neutralFillInverseActive = create3("neutral-fill-inverse-active").withDefault((element) => neutralFillInverseRecipe.getValueFor(element).evaluate(element).active);
 var neutralFillInverseFocus = create3("neutral-fill-inverse-focus").withDefault((element) => neutralFillInverseRecipe.getValueFor(element).evaluate(element).focus);
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/styles/patterns/type-ramp.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/styles/patterns/type-ramp.js
 var typeRampBase = cssPartial`
   font-family: ${bodyFont};
   font-size: ${typeRampBaseFontSize};
@@ -21176,7 +21176,7 @@ var typeRampPlus6 = cssPartial`
   font-variation-settings: ${typeRampPlus6FontVariations};
 `;
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/accordion/accordion.styles.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/accordion/accordion.styles.js
 var accordionStyles = (context, definition) => css2`
     ${display("flex")} :host {
       box-sizing: border-box;
@@ -21187,7 +21187,7 @@ var accordionStyles = (context, definition) => css2`
     }
   `;
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/styles/focus.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/styles/focus.js
 var focusTreatmentBase = cssPartial`
   outline: calc(${focusStrokeWidth} * 1px) solid ${focusStrokeOuter2};
   outline-offset: calc(${focusStrokeWidth} * -1px);
@@ -21197,10 +21197,10 @@ var focusTreatmentTight = cssPartial`
   outline-offset: calc(${strokeWidth} * 1px);
 `;
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/styles/size.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/styles/size.js
 var heightNumber = cssPartial`(${baseHeightMultiplier} + ${density}) * ${designUnit}`;
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/accordion/accordion-item/accordion-item.styles.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/accordion/accordion-item/accordion-item.styles.js
 var neutralFillStealthRestOnNeutralFillLayerRest = DesignToken.create("neutral-fill-stealth-rest-on-neutral-fill-layer-rest").withDefault((target2) => {
   const baseRecipe = neutralFillLayerRecipe.getValueFor(target2);
   const buttonRecipe = neutralFillStealthRecipe.getValueFor(target2);
@@ -21349,7 +21349,7 @@ var accordionItemStyles = (context, definition) => css2`
         }
       `));
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/accordion/accordion-item/index.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/accordion/accordion-item/index.js
 var fluentAccordionItem = AccordionItem.compose({
   baseName: "accordion-item",
   template: accordionItemTemplate,
@@ -21366,14 +21366,14 @@ var fluentAccordionItem = AccordionItem.compose({
   `
 });
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/accordion/index.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/accordion/index.js
 var fluentAccordion = Accordion.compose({
   baseName: "accordion",
   template: accordionTemplate,
   styles: accordionStyles
 });
 
-// ../sdk/node_modules/@fluentui/web-components/node_modules/tslib/tslib.es6.mjs
+// ../web-component-sdk/node_modules/@fluentui/web-components/node_modules/tslib/tslib.es6.mjs
 function __decorate2(decorators, target2, key, desc2) {
   var c = arguments.length, r = c < 3 ? target2 : desc2 === null ? desc2 = Object.getOwnPropertyDescriptor(target2, key) : desc2, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function")
@@ -21385,7 +21385,7 @@ function __decorate2(decorators, target2, key, desc2) {
   return c > 3 && r && Object.defineProperty(target2, key, r), r;
 }
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/styles/direction.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/styles/direction.js
 var DirectionalStyleSheetBehavior = class {
   constructor(ltr2, rtl2) {
     this.cache = /* @__PURE__ */ new WeakMap();
@@ -21438,7 +21438,7 @@ var DirectionalStyleSheetBehaviorSubscription = class {
   }
 };
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/styles/elevation.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/styles/elevation.js
 var ambientShadow = "0 0 2px rgba(0, 0, 0, 0.14)";
 var directionalShadow = "0 calc(var(--elevation) * 0.5px) calc((var(--elevation) * 1px)) rgba(0, 0, 0, 0.2)";
 var elevation = `box-shadow: ${ambientShadow}, ${directionalShadow};`;
@@ -21473,7 +21473,7 @@ var elevationShadowFlyout = DesignToken.create("elevation-shadow-flyout").withDe
 var elevationShadowDialogSize = DesignToken.create("elevation-shadow-dialog-size").withDefault(128);
 var elevationShadowDialog = DesignToken.create("elevation-shadow-dialog").withDefault((element) => elevationShadowRecipe.getValueFor(element).evaluate(element, elevationShadowDialogSize.getValueFor(element)));
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/styles/patterns/button.styles.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/styles/patterns/button.styles.js
 var baseButtonStyles = (context, definition, interactivitySelector5, nonInteractivitySelector3 = "[disabled]") => css2`
     ${display("inline-flex")}
     
@@ -21872,7 +21872,7 @@ var StealthButtonStyles = (context, definition, interactivitySelector5, nonInter
         }
       `));
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/styles/patterns/input.styles.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/styles/patterns/input.styles.js
 var placeholderRest = DesignToken.create("input-placeholder-rest").withDefault((target2) => {
   const baseRecipe = neutralFillInputRecipe.getValueFor(target2);
   const hintRecipe = neutralForegroundHintRecipe.getValueFor(target2);
@@ -22071,16 +22071,16 @@ var inputForcedColorStyles = (context, definition, logicalControlSelector7, inte
   }
 `;
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/utilities/behaviors.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/utilities/behaviors.js
 function appearanceBehavior(value, styles) {
   return new PropertyStyleSheetBehavior("appearance", value, styles);
 }
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/anchor/anchor.styles.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/anchor/anchor.styles.js
 var interactivitySelector = "[href]";
 var anchorStyles = (context, definition) => baseButtonStyles(context, definition, interactivitySelector).withBehaviors(appearanceBehavior("neutral", NeutralButtonStyles(context, definition, interactivitySelector)), appearanceBehavior("accent", AccentButtonStyles(context, definition, interactivitySelector)), appearanceBehavior("hypertext", HypertextStyles(context, definition, interactivitySelector)), appearanceBehavior("lightweight", LightweightButtonStyles(context, definition, interactivitySelector)), appearanceBehavior("outline", OutlineButtonStyles(context, definition, interactivitySelector)), appearanceBehavior("stealth", StealthButtonStyles(context, definition, interactivitySelector)));
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/anchor/index.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/anchor/index.js
 var Anchor2 = class extends Anchor {
   appearanceChanged(oldValue, newValue) {
     if (oldValue !== newValue) {
@@ -22125,7 +22125,7 @@ var fluentAnchor = Anchor2.compose({
   }
 });
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/anchored-region/anchored-region.styles.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/anchored-region/anchored-region.styles.js
 var anchoredRegionStyles = (context, definition) => css2`
   :host {
     contain: layout;
@@ -22133,14 +22133,14 @@ var anchoredRegionStyles = (context, definition) => css2`
   }
 `;
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/anchored-region/index.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/anchored-region/index.js
 var fluentAnchoredRegion = AnchoredRegion.compose({
   baseName: "anchored-region",
   template: anchoredRegionTemplate,
   styles: anchoredRegionStyles
 });
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/badge/badge.styles.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/badge/badge.styles.js
 var badgeStyles = (context, definition) => css2`
     ${display("inline-block")} :host {
       box-sizing: border-box;
@@ -22178,7 +22178,7 @@ var badgeStyles = (context, definition) => css2`
     }
   `;
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/badge/index.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/badge/index.js
 var Badge2 = class extends Badge {
   constructor() {
     super(...arguments);
@@ -22203,7 +22203,7 @@ var fluentBadge = Badge2.compose({
   styles: badgeStyles
 });
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/breadcrumb/breadcrumb.styles.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/breadcrumb/breadcrumb.styles.js
 var breadcrumbStyles = (context, definition) => css2`
   ${display("inline-block")} :host {
     box-sizing: border-box;
@@ -22215,14 +22215,14 @@ var breadcrumbStyles = (context, definition) => css2`
   }
 `;
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/breadcrumb/index.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/breadcrumb/index.js
 var fluentBreadcrumb = Breadcrumb.compose({
   baseName: "breadcrumb",
   template: breadcrumbTemplate,
   styles: breadcrumbStyles
 });
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/breadcrumb-item/breadcrumb-item.styles.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/breadcrumb-item/breadcrumb-item.styles.js
 var breadcrumbItemStyles = (context, definition) => css2`
     ${display("inline-flex")} :host {
       background: transparent;
@@ -22313,7 +22313,7 @@ var breadcrumbItemStyles = (context, definition) => css2`
         }
       `));
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/breadcrumb-item/index.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/breadcrumb-item/index.js
 var fluentBreadcrumbItem = BreadcrumbItem.compose({
   baseName: "breadcrumb-item",
   template: breadcrumbItemTemplate,
@@ -22328,7 +22328,7 @@ var fluentBreadcrumbItem = BreadcrumbItem.compose({
   `
 });
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/button/button.styles.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/button/button.styles.js
 var interactivitySelector2 = ":not([disabled])";
 var nonInteractivitySelector = "[disabled]";
 var buttonStyles = (context, definition) => css2`
@@ -22349,7 +22349,7 @@ var buttonStyles = (context, definition) => css2`
     ${baseButtonStyles(context, definition, interactivitySelector2, nonInteractivitySelector)}
   `.withBehaviors(appearanceBehavior("neutral", NeutralButtonStyles(context, definition, interactivitySelector2, nonInteractivitySelector)), appearanceBehavior("accent", AccentButtonStyles(context, definition, interactivitySelector2, nonInteractivitySelector)), appearanceBehavior("lightweight", LightweightButtonStyles(context, definition, interactivitySelector2, nonInteractivitySelector)), appearanceBehavior("outline", OutlineButtonStyles(context, definition, interactivitySelector2, nonInteractivitySelector)), appearanceBehavior("stealth", StealthButtonStyles(context, definition, interactivitySelector2, nonInteractivitySelector)));
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/button/index.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/button/index.js
 var Button2 = class extends Button {
   appearanceChanged(oldValue, newValue) {
     if (oldValue !== newValue) {
@@ -22393,7 +22393,7 @@ var fluentButton = Button2.compose({
   }
 });
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/calendar/calendar.styles.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/calendar/calendar.styles.js
 var ltrStyles = css2`
 .day.disabled::before {
   transform: translate(-50%, 0) rotate(45deg);
@@ -22509,7 +22509,7 @@ ${display("inline-block")} :host {
           }
       `), new DirectionalStyleSheetBehavior(ltrStyles, rtlStyles));
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/calendar/index.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/calendar/index.js
 var Calendar2 = class extends Calendar {
   constructor() {
     super(...arguments);
@@ -22526,7 +22526,7 @@ var fluentCalendar = Calendar2.compose({
   title: CalendarTitleTemplate
 });
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/card/card.styles.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/card/card.styles.js
 var cardStyles = (context, definition) => css2`
     ${display("block")} :host {
       display: block;
@@ -22551,7 +22551,7 @@ var cardStyles = (context, definition) => css2`
         }
       `));
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/card/index.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/card/index.js
 var Card2 = class extends Card {
   cardFillColorChanged(prev, next) {
     if (next) {
@@ -22607,7 +22607,7 @@ var fluentCard = Card2.compose({
   styles: cardStyles
 });
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/checkbox/checkbox.styles.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/checkbox/checkbox.styles.js
 var checkboxStyles = (context, definition) => css2`
     ${display("inline-flex")} :host {
       align-items: center;
@@ -22763,7 +22763,7 @@ var checkboxStyles = (context, definition) => css2`
         }
       `));
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/checkbox/index.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/checkbox/index.js
 var fluentCheckbox = Checkbox.compose({
   baseName: "checkbox",
   template: checkboxTemplate,
@@ -22780,7 +22780,7 @@ var fluentCheckbox = Checkbox.compose({
   `
 });
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/select/select.styles.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/select/select.styles.js
 var logicalControlSelector = ".control";
 var interactivitySelector3 = ":not([disabled]):not([open])";
 var nonInteractivitySelector2 = "[disabled]";
@@ -22901,7 +22901,7 @@ var baseSelectForcedColorStyles = (context, definition) => css2`
   `;
 var selectStyles = (context, definition) => baseSelectStyles(context, definition).withBehaviors(appearanceBehavior("outline", NeutralButtonStyles(context, definition, interactivitySelector3, nonInteractivitySelector2)), appearanceBehavior("filled", inputFilledStyles(context, definition, logicalControlSelector, interactivitySelector3).withBehaviors(forcedColorsStylesheetBehavior(inputForcedColorStyles(context, definition, logicalControlSelector, interactivitySelector3)))), appearanceBehavior("stealth", StealthButtonStyles(context, definition, interactivitySelector3, nonInteractivitySelector2)), forcedColorsStylesheetBehavior(baseSelectForcedColorStyles(context, definition)));
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/combobox/combobox.styles.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/combobox/combobox.styles.js
 var logicalControlSelector2 = ".control";
 var interactivitySelector4 = ":not([disabled]):not([open])";
 var comboboxStyles = (context, definition) => css2`
@@ -22936,7 +22936,7 @@ var comboboxStyles = (context, definition) => css2`
     }
   `.withBehaviors(appearanceBehavior("outline", inputOutlineStyles(context, definition, logicalControlSelector2, interactivitySelector4)), appearanceBehavior("filled", inputFilledStyles(context, definition, logicalControlSelector2, interactivitySelector4)), forcedColorsStylesheetBehavior(inputForcedColorStyles(context, definition, logicalControlSelector2, interactivitySelector4)));
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/combobox/index.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/combobox/index.js
 var Combobox2 = class extends Combobox {
   /**
    * @internal
@@ -22978,7 +22978,7 @@ var fluentCombobox = Combobox2.compose({
   `
 });
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/data-grid/data-grid.styles.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/data-grid/data-grid.styles.js
 var dataGridStyles = (context, definition) => css2`
   :host {
     display: flex;
@@ -22987,7 +22987,7 @@ var dataGridStyles = (context, definition) => css2`
   }
 `;
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/data-grid/data-grid-row.styles.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/data-grid/data-grid-row.styles.js
 var dataGridRowStyles = (context, definition) => css2`
     :host {
       display: grid;
@@ -23010,7 +23010,7 @@ var dataGridRowStyles = (context, definition) => css2`
         }
       `));
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/data-grid/data-grid-cell.styles.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/data-grid/data-grid-cell.styles.js
 var dataGridCellStyles = (context, definition) => css2`
     :host {
       padding: calc((${designUnit} + ${focusStrokeWidth} - ${strokeWidth}) * 1px) calc(((${designUnit} * 3) + ${focusStrokeWidth} - ${strokeWidth}) * 1px);
@@ -23042,7 +23042,7 @@ var dataGridCellStyles = (context, definition) => css2`
         }
       `));
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/data-grid/index.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/data-grid/index.js
 var fluentDataGridCell = DataGridCell.compose({
   baseName: "data-grid-cell",
   template: dataGridCellTemplate,
@@ -23059,7 +23059,7 @@ var fluentDataGrid = DataGrid.compose({
   styles: dataGridStyles
 });
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/design-system-provider/index.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/design-system-provider/index.js
 var swatchConverter = {
   toView(value) {
     if (value === null || value === void 0) {
@@ -23541,7 +23541,7 @@ var fluentDesignSystemProvider = DesignSystemProvider.compose({
   `
 });
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/dialog/dialog.styles.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/dialog/dialog.styles.js
 var dialogStyles = (context, definition) => css2`
   :host([hidden]) {
     display: none;
@@ -23587,14 +23587,14 @@ var dialogStyles = (context, definition) => css2`
   }
 `;
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/dialog/index.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/dialog/index.js
 var fluentDialog = Dialog.compose({
   baseName: "dialog",
   template: dialogTemplate,
   styles: dialogStyles
 });
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/divider/divider.styles.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/divider/divider.styles.js
 var dividerStyles = (context, definition) => css2`
     ${display("block")} :host {
       box-sizing: content-box;
@@ -23611,14 +23611,14 @@ var dividerStyles = (context, definition) => css2`
   }
   `;
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/divider/index.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/divider/index.js
 var fluentDivider = Divider.compose({
   baseName: "divider",
   template: dividerTemplate,
   styles: dividerStyles
 });
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/flipper/flipper.styles.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/flipper/flipper.styles.js
 var flipperStyles = (context, definition) => css2`
     ${display("inline-flex")} :host {
       height: calc((${heightNumber} + ${designUnit}) * 1px);
@@ -23698,7 +23698,7 @@ var flipperStyles = (context, definition) => css2`
         }
       `));
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/flipper/index.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/flipper/index.js
 var fluentFlipper = Flipper.compose({
   baseName: "flipper",
   template: flipperTemplate,
@@ -23715,7 +23715,7 @@ var fluentFlipper = Flipper.compose({
   `
 });
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/horizontal-scroll/horizontal-scroll.styles.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/horizontal-scroll/horizontal-scroll.styles.js
 var ltrActionsStyles = css2`
   .scroll-prev {
     right: auto;
@@ -23844,7 +23844,7 @@ var horizontalScrollStyles = (context, definition) => css2`
   }
 `;
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/horizontal-scroll/index.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/horizontal-scroll/index.js
 var HorizontalScroll2 = class extends HorizontalScroll {
   /**
    * @public
@@ -23873,7 +23873,7 @@ var fluentHorizontalScroll = HorizontalScroll2.compose({
   `
 });
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/listbox/listbox.styles.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/listbox/listbox.styles.js
 var listboxStyles = (context, definition) => css2`
     ${display("inline-flex")} :host {
       border: calc(${strokeWidth} * 1px) solid ${neutralStrokeRest};
@@ -23892,7 +23892,7 @@ var listboxStyles = (context, definition) => css2`
     }
   `;
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/listbox/index.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/listbox/index.js
 var Listbox2 = class extends Listbox {
 };
 var fluentListbox = Listbox2.compose({
@@ -23901,7 +23901,7 @@ var fluentListbox = Listbox2.compose({
   styles: listboxStyles
 });
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/listbox-option/listbox-option.styles.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/listbox-option/listbox-option.styles.js
 var optionStyles = (context, definition) => css2`
     ${display("inline-flex")} :host {
       position: relative;
@@ -24033,14 +24033,14 @@ var optionStyles = (context, definition) => css2`
         }
       `));
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/listbox-option/index.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/listbox-option/index.js
 var fluentOption = ListboxOption.compose({
   baseName: "option",
   template: listboxOptionTemplate,
   styles: optionStyles
 });
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/menu/menu.styles.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/menu/menu.styles.js
 var menuStyles = (context, definition) => css2`
     ${display("block")} :host {
       background: ${neutralLayerFloating2};
@@ -24079,7 +24079,7 @@ var menuStyles = (context, definition) => css2`
         }
       `));
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/menu/index.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/menu/index.js
 var Menu2 = class extends Menu {
   /**
    * @internal
@@ -24096,7 +24096,7 @@ var fluentMenu = Menu2.compose({
   styles: menuStyles
 });
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/menu-item/menu-item.styles.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/menu-item/menu-item.styles.js
 var menuItemStyles = (context, definition) => css2`
     ${display("grid")} :host {
       contain: layout;
@@ -24356,7 +24356,7 @@ var menuItemStyles = (context, definition) => css2`
         }
       `));
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/menu-item/index.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/menu-item/index.js
 var fluentMenuItem = MenuItem.compose({
   baseName: "menu-item",
   template: menuItemTemplate,
@@ -24378,7 +24378,7 @@ var fluentMenuItem = MenuItem.compose({
   `
 });
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/number-field/number-field.styles.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/number-field/number-field.styles.js
 var logicalControlSelector3 = ".root";
 var numberFieldStyles = (context, definition) => css2`
     ${display("inline-block")}
@@ -24446,7 +24446,7 @@ var numberFieldStyles = (context, definition) => css2`
     }
   `.withBehaviors(appearanceBehavior("outline", inputOutlineStyles(context, definition, logicalControlSelector3)), appearanceBehavior("filled", inputFilledStyles(context, definition, logicalControlSelector3)), forcedColorsStylesheetBehavior(inputForcedColorStyles(context, definition, logicalControlSelector3)));
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/number-field/index.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/number-field/index.js
 var NumberField2 = class extends NumberField {
   /**
    * @internal
@@ -24481,7 +24481,7 @@ var fluentNumberField = NumberField2.compose({
 `
 });
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/progress/progress/progress.styles.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/progress/progress/progress.styles.js
 var progressStyles = (context, definition) => css2`
     ${display("flex")} :host {
       align-items: center;
@@ -24598,7 +24598,7 @@ var progressStyles = (context, definition) => css2`
         }
       `));
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/progress/progress/index.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/progress/progress/index.js
 var Progress = class extends BaseProgress {
 };
 var fluentProgress = Progress.compose({
@@ -24613,7 +24613,7 @@ var fluentProgress = Progress.compose({
   `
 });
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/progress/progress-ring/progress-ring.styles.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/progress/progress-ring/progress-ring.styles.js
 var progressRingStyles = (context, definition) => css2`
     ${display("flex")} :host {
       align-items: center;
@@ -24689,7 +24689,7 @@ var progressRingStyles = (context, definition) => css2`
         }
       `));
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/progress/progress-ring/index.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/progress/progress-ring/index.js
 var ProgressRing = class extends BaseProgress {
 };
 var fluentProgressRing = ProgressRing.compose({
@@ -24716,7 +24716,7 @@ var fluentProgressRing = ProgressRing.compose({
   `
 });
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/radio/radio.styles.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/radio/radio.styles.js
 var radioStyles = (context, definition) => css2`
     ${display("inline-flex")} :host {
       --input-size: calc((${heightNumber} / 2) + ${designUnit});
@@ -24863,7 +24863,7 @@ var radioStyles = (context, definition) => css2`
         }
       `));
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/radio/index.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/radio/index.js
 var fluentRadio = Radio.compose({
   baseName: "radio",
   template: radioTemplate,
@@ -24875,7 +24875,7 @@ var fluentRadio = Radio.compose({
   `
 });
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/radio-group/radio-group.styles.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/radio-group/radio-group.styles.js
 var radioGroupStyles = (context, definition) => css2`
   ${display("flex")} :host {
     align-items: flex-start;
@@ -24896,14 +24896,14 @@ var radioGroupStyles = (context, definition) => css2`
   }
 `;
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/radio-group/index.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/radio-group/index.js
 var fluentRadioGroup = RadioGroup.compose({
   baseName: "radio-group",
   template: radioGroupTemplate,
   styles: radioGroupStyles
 });
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/search/search.template.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/search/search.template.js
 var searchTemplate = (context, definition) => html2`
   <template
     class="
@@ -24982,7 +24982,7 @@ var searchTemplate = (context, definition) => html2`
   </template>
 `;
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/search/search.styles.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/search/search.styles.js
 var logicalControlSelector4 = ".root";
 var clearButtonHover = DesignToken.create("clear-button-hover").withDefault((target2) => {
   const buttonRecipe = neutralFillStealthRecipe.getValueFor(target2);
@@ -25082,7 +25082,7 @@ var searchStyles = (context, definition) => css2`
     }
   `.withBehaviors(appearanceBehavior("outline", inputOutlineStyles(context, definition, logicalControlSelector4)), appearanceBehavior("filled", inputFilledStyles(context, definition, logicalControlSelector4)), forcedColorsStylesheetBehavior(inputForcedColorStyles(context, definition, logicalControlSelector4)));
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/search/index.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/search/index.js
 var Search2 = class extends Search {
   constructor() {
     super(...arguments);
@@ -25103,7 +25103,7 @@ var fluentSearch = Search2.compose({
   }
 });
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/select/index.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/select/index.js
 var Select2 = class extends Select {
   /**
    * @internal
@@ -25142,7 +25142,7 @@ var fluentSelect = Select2.compose({
   `
 });
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/skeleton/skeleton.styles.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/skeleton/skeleton.styles.js
 var skeletonStyles = (context, definition) => css2`
     ${display("block")} :host {
       --skeleton-fill-default: ${neutralFillSecondaryRest};
@@ -25217,14 +25217,14 @@ var skeletonStyles = (context, definition) => css2`
         }
       `));
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/skeleton/index.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/skeleton/index.js
 var fluentSkeleton = Skeleton.compose({
   baseName: "skeleton",
   template: skeletonTemplate,
   styles: skeletonStyles
 });
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/slider/slider.styles.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/slider/slider.styles.js
 var sliderStyles = (context, definition) => css2`
     ${display("inline-grid")} :host {
       --thumb-size: calc((${heightNumber} / 2) + ${designUnit} + (${strokeWidth} * 2));
@@ -25383,7 +25383,7 @@ var sliderStyles = (context, definition) => css2`
         }
       `));
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/slider/index.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/slider/index.js
 var fluentSlider = Slider.compose({
   baseName: "slider",
   template: sliderTemplate,
@@ -25393,7 +25393,7 @@ var fluentSlider = Slider.compose({
   `
 });
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/slider-label/slider-label.styles.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/slider-label/slider-label.styles.js
 var sliderLabelStyles = (context, definition) => css2`
     ${display("block")} :host {
       ${typeRampMinus1}
@@ -25467,14 +25467,14 @@ var sliderLabelStyles = (context, definition) => css2`
         }
       `));
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/slider-label/index.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/slider-label/index.js
 var fluentSliderLabel = SliderLabel.compose({
   baseName: "slider-label",
   template: sliderLabelTemplate,
   styles: sliderLabelStyles
 });
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/switch/switch.styles.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/switch/switch.styles.js
 var switchStyles = (context, definition) => css2`
     :host([hidden]) {
       display: none;
@@ -25682,7 +25682,7 @@ var switchStyles = (context, definition) => css2`
         }
       `));
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/switch/index.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/switch/index.js
 var fluentSwitch = Switch.compose({
   baseName: "switch",
   template: switchTemplate,
@@ -25694,7 +25694,7 @@ var fluentSwitch = Switch.compose({
   `
 });
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/tabs/tabs.styles.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/tabs/tabs.styles.js
 var tabsStyles = (context, definition) => css2`
       ${display("grid")} :host {
         box-sizing: border-box;
@@ -25788,7 +25788,7 @@ var tabsStyles = (context, definition) => css2`
         }
       `));
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/tabs/tab/tab.styles.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/tabs/tab/tab.styles.js
 var tabStyles = (context, definition) => css2`
       ${display("inline-flex")} :host {
         box-sizing: border-box;
@@ -25858,14 +25858,14 @@ var tabStyles = (context, definition) => css2`
           }
         `));
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/tabs/tab/index.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/tabs/tab/index.js
 var fluentTab = Tab.compose({
   baseName: "tab",
   template: tabTemplate,
   styles: tabStyles
 });
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/tabs/tab-panel/tab-panel.styles.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/tabs/tab-panel/tab-panel.styles.js
 var tabPanelStyles = (context, definition) => css2`
   ${display("block")} :host {
     box-sizing: border-box;
@@ -25874,21 +25874,21 @@ var tabPanelStyles = (context, definition) => css2`
   }
 `;
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/tabs/tab-panel/index.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/tabs/tab-panel/index.js
 var fluentTabPanel = TabPanel.compose({
   baseName: "tab-panel",
   template: tabPanelTemplate,
   styles: tabPanelStyles
 });
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/tabs/index.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/tabs/index.js
 var fluentTabs = Tabs.compose({
   baseName: "tabs",
   template: tabsTemplate,
   styles: tabsStyles
 });
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/text-area/text-area.styles.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/text-area/text-area.styles.js
 var logicalControlSelector5 = ".control";
 var textAreaStyles = (context, definition) => css2`
     ${display("inline-flex")}
@@ -25932,7 +25932,7 @@ var textAreaStyles = (context, definition) => css2`
     }
   `.withBehaviors(appearanceBehavior("outline", inputOutlineStyles(context, definition, logicalControlSelector5)), appearanceBehavior("filled", inputFilledStyles(context, definition, logicalControlSelector5)), forcedColorsStylesheetBehavior(inputForcedColorStyles(context, definition, logicalControlSelector5)));
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/text-area/index.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/text-area/index.js
 var TextArea2 = class extends TextArea {
   /**
    * @internal
@@ -25966,7 +25966,7 @@ var fluentTextArea = TextArea2.compose({
   }
 });
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/text-field/text-field.styles.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/text-field/text-field.styles.js
 var logicalControlSelector6 = ".root";
 var textFieldStyles = (context, definition) => css2`
     ${display("inline-block")}
@@ -26011,7 +26011,7 @@ var textFieldStyles = (context, definition) => css2`
     }
   `.withBehaviors(appearanceBehavior("outline", inputOutlineStyles(context, definition, logicalControlSelector6)), appearanceBehavior("filled", inputFilledStyles(context, definition, logicalControlSelector6)), forcedColorsStylesheetBehavior(inputForcedColorStyles(context, definition, logicalControlSelector6)));
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/text-field/index.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/text-field/index.js
 var TextField2 = class extends TextField {
   /**
    * @internal
@@ -26045,7 +26045,7 @@ var fluentTextField = TextField2.compose({
   }
 });
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/toolbar/toolbar.styles.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/toolbar/toolbar.styles.js
 var toolbarStyles = (context, definition) => css2`
     ${display("inline-flex")} :host {
       --toolbar-item-gap: calc(${designUnit} * 1px);
@@ -26116,7 +26116,7 @@ var toolbarStyles = (context, definition) => css2`
         }
       `));
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/toolbar/index.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/toolbar/index.js
 var Toolbar2 = class extends Toolbar {
 };
 var fluentToolbar = Toolbar2.compose({
@@ -26126,7 +26126,7 @@ var fluentToolbar = Toolbar2.compose({
   styles: toolbarStyles
 });
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/tooltip/tooltip.styles.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/tooltip/tooltip.styles.js
 var tooltipStyles = (context, definition) => css2`
     :host {
       position: relative;
@@ -26230,7 +26230,7 @@ var tooltipStyles = (context, definition) => css2`
         }
       `));
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/tooltip/index.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/tooltip/index.js
 var Tooltip2 = class extends Tooltip {
   /**
    * @internal
@@ -26247,7 +26247,7 @@ var fluentTooltip = Tooltip2.compose({
   styles: tooltipStyles
 });
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/tree-view/tree-view.styles.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/tree-view/tree-view.styles.js
 var treeViewStyles = (context, definition) => css2`
   :host([hidden]) {
     display: none;
@@ -26261,14 +26261,14 @@ var treeViewStyles = (context, definition) => css2`
   }
 `;
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/tree-view/index.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/tree-view/index.js
 var fluentTreeView = TreeView.compose({
   baseName: "tree-view",
   template: treeViewTemplate,
   styles: treeViewStyles
 });
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/tree-item/tree-item.styles.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/tree-item/tree-item.styles.js
 var ltr = css2`
   .expand-collapse-button svg {
     transform: rotate(0deg);
@@ -26490,7 +26490,7 @@ var treeItemStyles = (context, definition) => css2`
         }
       `));
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/tree-item/index.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/tree-item/index.js
 var fluentTreeItem = TreeItem.compose({
   baseName: "tree-item",
   template: treeItemTemplate,
@@ -26502,12 +26502,12 @@ var fluentTreeItem = TreeItem.compose({
   `
 });
 
-// ../sdk/node_modules/@fluentui/web-components/dist/esm/fluent-design-system.js
+// ../web-component-sdk/node_modules/@fluentui/web-components/dist/esm/fluent-design-system.js
 function provideFluentDesignSystem(element) {
   return DesignSystem.getOrCreate(element).withPrefix("fluent");
 }
 
-// ../sdk/dist/data-table.js
+// ../web-component-sdk/dist/data-table.js
 var __decorate3 = function(decorators, target2, key, desc2) {
   var c = arguments.length, r = c < 3 ? target2 : desc2 === null ? desc2 = Object.getOwnPropertyDescriptor(target2, key) : desc2, d2;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function")
@@ -26522,13 +26522,13 @@ provideFluentDesignSystem().register(fluentDataGrid(), fluentDataGridRow(), flue
 var DataTable = class DataTable2 extends LitElement {
   constructor() {
     super(...arguments);
-    this.todos = [];
+    this.data = [];
   }
   connectedCallback() {
     return __async(this, null, function* () {
       __superGet(DataTable2.prototype, this, "connectedCallback").call(this);
       const response = yield fetch("https://jsonplaceholder.typicode.com/todos");
-      this.todos = yield response.json();
+      this.data = yield response.json();
     });
   }
   render() {
@@ -26541,7 +26541,7 @@ var DataTable = class DataTable2 extends LitElement {
             <fluent-data-grid-cell cell-type="columnheader" grid-column="2">Title</fluent-data-grid-cell>
             <fluent-data-grid-cell cell-type="columnheader" grid-column="3">Completed</fluent-data-grid-cell>
           </fluent-data-grid-row>
-          ${this.todos.map((todo) => html`
+          ${this.data.map((todo) => html`
             <fluent-data-grid-row role="row">
               <fluent-data-grid-cell grid-column="1">${todo.id}</fluent-data-grid-cell>
               <fluent-data-grid-cell grid-column="2">${todo.title}</fluent-data-grid-cell>
@@ -26568,7 +26568,7 @@ DataTable.styles = css`
   `;
 __decorate3([
   property({ type: Array })
-], DataTable.prototype, "todos", void 0);
+], DataTable.prototype, "data", void 0);
 DataTable = __decorate3([
   customElement("data-table")
 ], DataTable);
@@ -26705,4 +26705,4 @@ tabbable/dist/index.esm.js:
   * @license MIT, https://github.com/focus-trap/tabbable/blob/master/LICENSE
   *)
 */
-//# sourceMappingURL=cases-sdk_dist_data-table.js.map
+//# sourceMappingURL=wz-sdk_dist_data-table.js.map

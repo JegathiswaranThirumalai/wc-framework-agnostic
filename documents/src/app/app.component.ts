@@ -1,6 +1,6 @@
 import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import "cases-sdk/dist/data-table";
+import "wz-sdk/dist/data-table";
 @Component({
   selector: 'app-root',
   standalone: true,

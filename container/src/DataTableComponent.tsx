@@ -1,6 +1,6 @@
 import React from 'react';
 import { createComponent } from '@lit/react';
-import DataTable  from 'cases-sdk/dist/data-table';
+import DataTable  from 'wz-sdk/dist/data-table';
 
 export const DataTableComponent = createComponent({
   tagName: 'data-table',

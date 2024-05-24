@@ -1,12 +1,12 @@
 import { LitElement } from 'lit';
-interface Todo {
+interface TableData {
     userId: number;
     id: number;
     title: string;
     completed: boolean;
 }
 export default class DataTable extends LitElement {
-    todos: Todo[];
+    data: TableData[];
     static styles: import("lit").CSSResult;
     connectedCallback(): Promise<void>;
     render(): import("lit-html").TemplateResult<1>;

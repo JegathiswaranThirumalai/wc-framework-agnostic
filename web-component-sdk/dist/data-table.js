@@ -12,12 +12,12 @@ provideFluentDesignSystem()
 let DataTable = class DataTable extends LitElement {
     constructor() {
         super(...arguments);
-        this.todos = [];
+        this.data = [];
     }
     async connectedCallback() {
         super.connectedCallback();
         const response = await fetch('https://jsonplaceholder.typicode.com/todos');
-        this.todos = await response.json();
+        this.data = await response.json();
     }
     render() {
         return html `
@@ -29,7 +29,7 @@ let DataTable = class DataTable extends LitElement {
             <fluent-data-grid-cell cell-type="columnheader" grid-column="2">Title</fluent-data-grid-cell>
             <fluent-data-grid-cell cell-type="columnheader" grid-column="3">Completed</fluent-data-grid-cell>
           </fluent-data-grid-row>
-          ${this.todos.map(todo => html `
+          ${this.data.map(todo => html `
             <fluent-data-grid-row role="row">
               <fluent-data-grid-cell grid-column="1">${todo.id}</fluent-data-grid-cell>
               <fluent-data-grid-cell grid-column="2">${todo.title}</fluent-data-grid-cell>
@@ -56,7 +56,7 @@ DataTable.styles = css `
   `;
 __decorate([
     property({ type: Array })
-], DataTable.prototype, "todos", void 0);
+], DataTable.prototype, "data", void 0);
 DataTable = __decorate([
     customElement('data-table')
 ], DataTable);
